@@ -3,6 +3,9 @@ import Box from "@mui/material"
 import HeaderImg from './Assets/HeaderImg.svg'
 export const MainDiv = styled('div')({
     fontFamily: 'Montserrat, sans-serif',
+    boxSizing: 'border-box',
+    padding: '0',
+    margin: '0',
     '& .slider' : {
         backgroundColor: '#D2D2D2',
         backgroundImage: `linear-gradient(to right,rgb(25, 26, 75, 1), rgb(25, 26, 75, 0)), url(${HeaderImg})` ,
@@ -14,10 +17,11 @@ export const MainDiv = styled('div')({
         justifyContent: 'space-between'
     },
     '& .sliderContent' : {
+        textAlign: 'center',
         display: 'flex',
         flexDirection: 'column',
         textAlign: 'left',
-        marginLeft: '130px',
+        marginLeft: '9vw',
         paddingTop: '130px',
         maxWidth: '31%',
     },
@@ -42,10 +46,10 @@ export const MainDiv = styled('div')({
     },
     '& .btnWhite' : {
         width: '220px',
-        textAlign: 'center',
         marginTop: '43px',
         padding: '0 10px',
         textTransform: 'uppercase',
+        textAlign: 'center',
         backgroundColor: '#ffffff',
         fontSize: '20px',
         border: 'none',
@@ -54,34 +58,89 @@ export const MainDiv = styled('div')({
         fontWeight: '700',
         cursor: 'pointer',
     },
-    '& .mediaContainer' : {
-        paddingTop: '193px',
-        marginRight: '130px',
-    },
-    '& .circleMedia' : {
-        height: '60px',
-        width: '60px',
-        color: '#2E3092',
-        borderRadius: '50%'
-    },
-    '& .mediaIcon' : {
-        marginTop: '12px'
-    },
     '& .numberInfo' : {
         fontSize: '60px',
+        marginBottom: '10px',
         fontWeight: '700',
-        color: 'linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1))'
     },
-    '& .dcpInfo' : {
-        fontSize: '25px'
+    '& .infoContainer' : {
+        display: 'flex',
+        flesDirection: 'row',
+        marginBottom: '20px',
+        height: '75px'
+    },
+    '& .plusIcon' : {
+        fontSize: '60px',
+        fontFamily: 'Varela Round, sans-serif'
     },
     '& .generalInfo' : {
+        background: '-webkit-linear-gradient(#4446B6, #191A4B)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
         backgroundColor: '#A8A8A8',
         height: '259px',
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-evenly'
+    },  
+    '& .dcpInfo' : {
+        fontSize: '25px',
+        fontWeight: '700'
     },
-
+    '& .line' : {
+        width: '400px',
+        height: '3px',
+        backgroundColor: '#CFCFCF',
+        margin: '0 auto',
+    },
+    '& .content' : {
+        margin: '0 9vw 0 9vw',
+    },
+    '& .pageTitle' : {
+        marginTop: '61px',
+        width: 'fit-content',
+        textTransform: 'uppercase',
+        fontWeight: '700',
+        color: '#1C1D52'
+    },
+    '& .pageText' : {
+        color: '#323232',
+        fontWeight: '600',
+        fontSize: '18px',
+        width: '100%',
+        marginBottom: '40px',
+        textAlign: 'left'
+    },
+    '& .contentIcon' : {
+        width: '48px',
+        height: '48px',
+    },
+    '& .card' : {
+        backgroundColor: '#191A4B',
+        color: '#ffffff',
+        fontWeight: '500',
+        borderRadius: '8px',
+        width: '16vw',
+        height: '190px',
+        textAlign: 'left',
+        padding: '25px'
+    },
+    '& .cardContainer' : {
+        marginTop: '30px',
+        display: 'flex',
+        flexDirection: 'row',
+        width: '100%',
+        justifyContent: 'space-between',
+        marginBottom: '40px',
+    },
+    '& .cardText' : {
+        fontWeight: '300',
+        fontSize: '14px',
+        marginTop: '8px'
+    },
+    '& .cardTitle' : {
+        fontSize: '18px',
+        margin: '10px 0'
+    },
 })
