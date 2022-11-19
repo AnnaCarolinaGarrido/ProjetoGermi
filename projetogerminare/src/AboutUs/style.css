@@ -1,0 +1,201 @@
+.mainContainer {
+  margin-top: 98px;
+}
+section {
+  margin-top: 100px;
+}
+.legacy {
+  background: linear-gradient(
+    90.13deg,
+    #f0f0ff 6.86%,
+    #7071b4 33.36%,
+    #33359d 66.63%,
+    #0003a0 99.89%
+  );
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 267px;
+  position: relative;
+  padding: 0;
+  z-index: -2;
+  color: white;
+  display: flex;
+  padding: 0 40px;
+}
+
+.legacy .imgContainer {
+  margin: 0;
+  padding: 0;
+  /* position: absolute;
+    bottom: 0; */
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  left: 5%;
+  margin-top: -58px;
+  display: inline-block;
+}
+
+h3 {
+  background: #2e3092;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  padding: 8px 10px;
+  border-radius: 2px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+#batista-label {
+  z-index: 1;
+  position: absolute;
+  bottom: 8%;
+  margin: 0 auto;
+  min-width: 370px;
+}
+.legacy .contentContainer {
+  margin: 60px 0;
+  margin-left: 80px;
+  margin-top: 30px;
+}
+.legacy .contentContainer h2 {
+  text-transform: uppercase;
+}
+.legacy .contentContainer p {
+  max-width: 610px;
+  font-size: 18px;
+}
+.origins {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 26px;
+}
+.origins > div {
+  display: flex;
+  justify-content: space-between;
+}
+.date-label {
+  position: absolute;
+  left: 5px;
+}
+.section-title {
+  color: #2e3092;
+  text-transform: uppercase;
+}
+.content {
+  max-width: 600px;
+}
+.rebuilding div {
+  display: flex;
+  gap: 16px;
+}
+.rebuilding div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.imageContainerGalery {
+  position: relative;
+}
+.shadow {
+  background: linear-gradient(360deg, #1c1d52 1.2%, rgba(28, 29, 82, 0) 100%);
+  border-radius: 8px;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.shadow h5 {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.g-img {
+  width: 100%;
+}
+.imageContainerGalery:hover .shadow {
+  opacity: 1;
+}
+.academys .intro {
+  display: flex;
+  gap: 60px;
+}
+.academys .intro p {
+  font-size: 18px;
+}
+.carousel .sliderBg {
+  background: linear-gradient(
+    90deg,
+    rgba(68, 70, 182, 0.94) 0.85%,
+    rgba(25, 26, 75, 0.94) 98.74%
+  );
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  left: -150px;
+  z-index: -1;
+}
+.carousel {
+  min-height: 550px;
+  position: relative;
+}
+.slider-container{
+    padding: 80px 0;
+}
+.slider-container h2{
+    color: white;
+}
+.slick-dots{
+    transform: rotate(90deg);
+    right: -480px;
+    bottom: 40%!important;
+}
+.dot{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+}
+.slick-active .dot{
+    background-color: #363894;
+}
+.slider-item{
+    background-color: white;
+    min-height: 322px;
+    border-radius: 8px;
+    display: flex;
+    margin: -2px 0;
+}
+.slider-item-wrapper{
+    display: flex;
+    align-items: center;
+    height: 322px;
+    gap: 100px;
+    margin-left: -80px;
+
+}
+.sliderText{
+    max-width: 618px;
+}
+.sliderText h4{
+    color: #363894;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+}
+.sliderText span{
+    color: #777582;
+    font-weight: 700;
+    font-size: 14px;
+}
+.sliderText p{
+    font-size: 18px;
+    font-weight: 400;
+}
