@@ -16,7 +16,7 @@ export const BlueButton = styled(StyledButton)`
 `;
 export const WhiteButton = styled(StyledButton)`
   background-color: #FFFFFF;
-  color: #191A4B;
+  color: #252525;
   cursor: pointer;
 `;
 
