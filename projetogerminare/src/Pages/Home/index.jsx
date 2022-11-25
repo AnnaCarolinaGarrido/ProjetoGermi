@@ -4,11 +4,11 @@ import CompaniesIcon from './Assets/Companies.svg'
 import BasketIcon from './Assets/Basket.svg'
 import BookIcon from './Assets/Book.svg'
 import SignalIcon from './Assets/Signal.svg'
-import CultureImg from './Assets/CultureImg.svg'
+import CltImg from './Assets/CltImg.svg'
 import qrCodeMensal from './Assets/qrCodeMensal.png'
 import qrCodeUnico from './Assets/qrCodeUnico.png'
 import Button from '@mui/material/Button';
-
+import WavyBackground from './Assets/WavyBackground.svg';
 const cardsList = [
     { id: '#191A4B', title: 'Ensino 100% gratuito', text: 'A Escola Germinare oferece um ensino totalmente gratuito e integral, com professores altamente qualificados com dedicação exclusiva à escola.', img: BookIcon },
     { id: '#26276', title: 'Escola tecnológica', text: 'Temos wi-fi 6, fornecimento de notebook, salas de aula climatizadas 100% digitais, com equipamentos de última geração.', img: SignalIcon },
@@ -68,17 +68,17 @@ export default function HomePage() {
                     </div>
                     <div className="culture">
                         <h3 className='pageTitle'> Sobre nossa cultura </h3>
-                        <div>
-                            <img className="cultureImg" src={CultureImg} />
-                        </div>
-                        <div className="cultureText">
-                            <div>
-                                <h3 className='pageTitle'> Nossa missão </h3>
-                                <p> Formar jovens administradores de empresas e cidadãos que tenham total aderência aos nossos valores, alta capacidade de liderança, aguçado tino comercial e competência para produzir resultados superlativos. Somos uma instituição aprovada pelo MEC – Ministério da Educação – e reconhecida pela UNESCO.</p>
-                            </div>
-                            <div>
-                            <h3 className='pageTitle'> Projeto acadêmico </h3>
-                                <p> O foco principal é oferecer uma ampla preparação com conteúdos dirigidos ao desenvolvimento de habilidades profissionais e a oportunidade de especialização escolhida: digital, financeiro, varejo, commodities e bens de consumo.</p>
+                        <div className="cultureCnt">
+                                <div className="cultureCircle">
+                                    <img className="cltImg" src={CltImg}/>
+                                </div>
+                            <div className="cultureText">
+                                <div>
+                                    <h3 className='pageTitle pagep'> Nossa missão </h3>
+                                    <p> Formar jovens administradores de empresas e cidadãos que tenham total aderência aos nossos valores, alta capacidade de liderança, aguçado tino comercial e competência para produzir resultados superlativos. Somos uma instituição aprovada pelo MEC – Ministério da Educação – e reconhecida pela UNESCO.</p>
+                                    <h3 className='pageTitle pagep'> Projeto acadêmico </h3>
+                                    <p> O foco principal é oferecer uma ampla preparação com conteúdos dirigidos ao desenvolvimento de habilidades profissionais e a oportunidade de especialização escolhida: digital, financeiro, varejo, commodities e bens de consumo.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -101,6 +101,9 @@ export default function HomePage() {
                         <img src={qrCodeImage ? `${qrCodeMensal}` : `${qrCodeUnico}`} alt="QR Code Doação" />
                     </div>
                 </section>
+                <div className='videoCnt'>
+                    <h3 className='pageTitle'> Sobre nossa escola </h3>
+                </div>
             </MainDiv>
         </>
     )

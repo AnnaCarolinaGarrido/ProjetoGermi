@@ -1,6 +1,8 @@
 import { styled } from "@mui/material";
 import Box from "@mui/material"
 import HeaderImg from './Assets/HeaderImg.svg'
+import WavyBackground from './Assets/WavyBackground.svg';
+
 export const MainDiv = styled('div')({
     fontFamily: 'Montserrat, sans-serif',
     boxSizing: 'border-box',
@@ -104,6 +106,10 @@ export const MainDiv = styled('div')({
         fontWeight: '700',
         color: '#1C1D52'
     },
+    '& .pagep': {
+        margin: '0',
+        fontSize: '18px'
+    },
     '& .pageText': {
         color: '#323232',
         fontWeight: '600',
@@ -143,18 +149,39 @@ export const MainDiv = styled('div')({
         fontSize: '18px',
         margin: '10px 0'
     },
-    '& .culture': {
-        display: 'flex',
-        flexDirection: 'row'
-    },
     '& .cultureText': {
-        width: '501px',
+        maxWidth: '420px',
         textAlign: 'left',
-        fontSize: '13px'
+        fontSize: '16px',
+        height: '241px',
+        fontWeight: '600',
+        color: '#323232'
     },
-    '& .cultureImg': {
-        width: '579px',
-        height: '331px'
+    '& .cltImg': {
+        zIndex: '0',
+        borderRadius: '8px',
+        width: '539px',
+        height: 'fit-content',
+        marginTop: '-40px'
+    },
+    '& .cultureCircle': {
+        width: '301px',
+        height: '301px',
+        background: '#191A4B',
+        borderRadius: '50%',
+        zIndex: '1'
+    },
+    '& .cultureCnt': {
+        display: 'flex',
+        marginTop: '38px',
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+    },
+    '& .videoCnt': {
+        backgroundImage: `url(${WavyBackground})`,
+        height: '100vh',
+        backgroundSize: 'cover',
+        marginTop: '200px'
     },
     '& .highlightedInfo': {
         display: 'flex',
