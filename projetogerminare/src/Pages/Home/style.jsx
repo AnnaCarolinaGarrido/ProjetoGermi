@@ -6,9 +6,9 @@ export const MainDiv = styled('div')({
     boxSizing: 'border-box',
     padding: '0',
     margin: '0',
-    '& .slider' : {
+    '& .slider': {
         backgroundColor: '#D2D2D2',
-        backgroundImage: `linear-gradient(to right,rgb(25, 26, 75, 1), rgb(25, 26, 75, 0)), url(${HeaderImg})` ,
+        backgroundImage: `linear-gradient(to right,rgb(25, 26, 75, 1), rgb(25, 26, 75, 0)), url(${HeaderImg})`,
         backgroundSize: 'cover',
         height: '603px',
         color: '#ffffff',
@@ -16,7 +16,7 @@ export const MainDiv = styled('div')({
         display: 'flex',
         justifyContent: 'space-between'
     },
-    '& .sliderContent' : {
+    '& .sliderContent': {
         textAlign: 'center',
         display: 'flex',
         flexDirection: 'column',
@@ -25,26 +25,26 @@ export const MainDiv = styled('div')({
         paddingTop: '130px',
         maxWidth: '31%',
     },
-    '& .subtitle' : {
+    '& .subtitle': {
         textTransform: 'uppercase',
         fontSize: '20px',
         fontWeight: '400',
         letterSpacing: '7px',
         margin: '0',
     },
-    '& .maintitle' : {
+    '& .maintitle': {
         marginTop: '26.6px',
         fontSize: '55px',
         marginBottom: '0',
         lineHeight: '58px',
     },
-    '& .description' : {
+    '& .description': {
         fontSize: '18px',
         lineHeight: '26px',
         fontWeight: '400',
         marginBottom: '0px',
     },
-    '& .btnWhite' : {
+    '& .btnWhite': {
         width: '220px',
         marginTop: '43px',
         padding: '0 10px',
@@ -58,22 +58,22 @@ export const MainDiv = styled('div')({
         fontWeight: '700',
         cursor: 'pointer',
     },
-    '& .numberInfo' : {
+    '& .numberInfo': {
         fontSize: '60px',
         marginBottom: '10px',
         fontWeight: '700',
     },
-    '& .infoContainer' : {
+    '& .infoContainer': {
         display: 'flex',
         flesDirection: 'row',
         marginBottom: '20px',
         height: '75px'
     },
-    '& .plusIcon' : {
+    '& .plusIcon': {
         fontSize: '60px',
         fontFamily: 'Varela Round, sans-serif'
     },
-    '& .generalInfo' : {
+    '& .generalInfo': {
         background: '-webkit-linear-gradient(#4446B6, #191A4B)',
         WebkitBackgroundClip: 'text',
         WebkitTextFillColor: 'transparent',
@@ -83,28 +83,28 @@ export const MainDiv = styled('div')({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-evenly'
-    },  
-    '& .dcpInfo' : {
+    },
+    '& .dcpInfo': {
         fontSize: '25px',
         fontWeight: '700'
     },
-    '& .line' : {
+    '& .line': {
         width: '400px',
         height: '3px',
         backgroundColor: '#CFCFCF',
         margin: '0 auto',
     },
-    '& .content' : {
+    '& .content': {
         margin: '0 9vw 0 9vw',
     },
-    '& .pageTitle' : {
+    '& .pageTitle': {
         marginTop: '61px',
         width: 'fit-content',
         textTransform: 'uppercase',
         fontWeight: '700',
         color: '#1C1D52'
     },
-    '& .pageText' : {
+    '& .pageText': {
         color: '#323232',
         fontWeight: '600',
         fontSize: '18px',
@@ -112,11 +112,11 @@ export const MainDiv = styled('div')({
         marginBottom: '40px',
         textAlign: 'left'
     },
-    '& .contentIcon' : {
+    '& .contentIcon': {
         width: '48px',
         height: '48px',
     },
-    '& .card' : {
+    '& .card': {
         backgroundColor: '#191A4B',
         color: '#ffffff',
         fontWeight: '500',
@@ -126,7 +126,7 @@ export const MainDiv = styled('div')({
         textAlign: 'left',
         padding: '25px'
     },
-    '& .cardContainer' : {
+    '& .cardContainer': {
         marginTop: '30px',
         display: 'flex',
         flexDirection: 'row',
@@ -134,13 +134,97 @@ export const MainDiv = styled('div')({
         justifyContent: 'space-between',
         marginBottom: '40px',
     },
-    '& .cardText' : {
+    '& .cardText': {
         fontWeight: '300',
         fontSize: '14px',
         marginTop: '8px'
     },
-    '& .cardTitle' : {
+    '& .cardTitle': {
         fontSize: '18px',
         margin: '10px 0'
     },
+    '& .culture': {
+        display: 'flex',
+        flexDirection: 'row'
+    },
+    '& .cultureText': {
+        width: '501px',
+        textAlign: 'left',
+        fontSize: '13px'
+    },
+    '& .cultureImg': {
+        width: '579px',
+        height: '331px'
+    },
+    '& .highlightedInfo': {
+        display: 'flex',
+        justifySelf: 'center',
+        alingSelf: 'center',
+        justifyContent: 'space-around',
+        flexDirection: 'row',
+        height: '350px',
+        margin: '110px auto',
+        borderRadius: '8px',
+        width: '1184px',
+        height: '350px',
+        maxWidth: '95%',
+        height: 'auto',
+        padding: '40px',
+        backgroundImage: 'linear-gradient(to right, #191A4B, #4446B6)',
+
+        '& .highlightedInfoText': {
+            height: 'auto',
+
+            'h1': {
+                font: '700 22px Montserrat, sans-serif',
+                textAlign: 'left',
+                color: 'white',
+                width: '500px',
+            },
+
+            'p': {
+                font: '500 18px Montserrat, sans-serif',
+                marginTop: '30px',
+                wordWrap: 'break-word',
+                height: 'auto',
+                color: 'white',
+                width: '95%',
+                maxWidth: '550px',
+                lineHeight: '21px',
+                textAlign: 'left'
+            }
+        },
+
+        '& .donationComponent': {
+            display: 'flex',
+            justifySelf: 'center',
+            alingSelf: 'center',
+            flexDirection: 'row',
+            borderRadius: '8px',
+            width: '400px',
+            maxHeight: '200px',
+            maxWidth: '95%',
+            backgroundColor: '#fff',
+
+            '& .donationButtonContainer': {
+                display: 'flex',
+                justifySelf: 'center',
+                alingSelf: 'center',
+                flexDirection: 'column',
+
+                '& .donationText': {
+                    width: '240px',
+                    font: ' 700 20px Montserrat, sans-serif',
+                    color: '#1C1D52',
+                },
+            },
+            'img': {
+                position: 'relative',
+                width: '150px',
+                height: '150px',
+                left: '80px',
+                top: '29px',
+            }
+        }
+    }
 })
