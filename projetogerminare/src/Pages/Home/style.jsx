@@ -1,6 +1,8 @@
 import { styled } from "@mui/material";
 import Box from "@mui/material"
 import HeaderImg from './Assets/HeaderImg.svg'
+import WavyBackground from './Assets/WavyBackground.svg';
+
 export const MainDiv = styled('div')({
     fontFamily: 'Montserrat, sans-serif',
     boxSizing: 'border-box',
@@ -104,13 +106,27 @@ export const MainDiv = styled('div')({
         fontWeight: '700',
         color: '#1C1D52'
     },
+    '& .pagep': {
+        margin: '0',
+        fontSize: '18px'
+    },
+    '& .pagep2': {
+        color: 'white',
+    },
     '& .pageText': {
         color: '#323232',
         fontWeight: '600',
-        fontSize: '18px',
+        fontSize: '16px',
         width: '100%',
         marginBottom: '40px',
         textAlign: 'left'
+    },
+    '& .paget2': {
+        color: 'white',
+        width: '502px',
+        marginTop: '25px',
+        lineHeight: '21px',
+        fontSize: '18px'
     },
     '& .contentIcon': {
         width: '48px',
@@ -143,18 +159,103 @@ export const MainDiv = styled('div')({
         fontSize: '18px',
         margin: '10px 0'
     },
-    '& .culture': {
+    '& .cultureText': {
+        maxWidth: '490px',
+        textAlign: 'left',
+        fontSize: '17px',
+        height: '241px',
+        fontWeight: '600',
+        color: '#323232'
+    },
+    '& .cltImg': {
+        zIndex: '0',
+        borderRadius: '8px',
+        width: '539px',
+        height: 'fit-content',
+        marginTop: '-40px'
+    },
+    '& .cultureCircle': {
+        width: '301px',
+        height: '301px',
+        background: '#191A4B',
+        borderRadius: '50%',
+        zIndex: '1'
+    },
+    '& .cultureCnt': {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginTop: '38px',
+    },
+    '& .videoCnt': {
+        backgroundImage: `url(${WavyBackground})`,
+        height: '100vh',
+        margin: 0,
+        height: '603px',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        marginTop: '200px',
+        display: 'flex',
+        flexDirection: 'column'
+    },
+    '& .videoContent': {
+        height: '100%',
+        width: '82vw',
+        marginTop: '-75px',
+        position: 'absolute',
         display: 'flex',
         flexDirection: 'row'
     },
-    '& .cultureText': {
-        width: '501px',
-        textAlign: 'left',
-        fontSize: '13px'
+    '& .ytvideo': {
+        borderRadius: '8px',
+        minWidth: '580px'
     },
-    '& .cultureImg': {
-        width: '579px',
-        height: '331px'
+    '& .retroText': {
+        marginLeft: '80px',
+        width: '500px',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        height: '276px',
+    },
+    '& .mediaCircle': {
+        width: '65px',
+        height: '65px',
+        borderRadius: '50%',
+        backgroundColor: 'white',
+    },
+    '& .mediaCnt': {
+        display: 'flex',
+        flexDirection: 'row',
+        width: '230px',
+        justifyContent: 'space-around',
+        marginRight: 'auto'
+    },
+    '& .mediaIcon': {
+        width: '42px',
+        height: '32px',
+        marginTop: '17.5px'
+    },
+    '& .companiesCnt': {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginTop: '280px'
+    },
+    '& .companyLogo': {
+        width: '95px',
+        height: '95px'
+    },
+    '& .logoCnt': {
+        display: 'flex',
+        flexDirection: 'column',
+        marginTop: '45px'
+    },
+    '& .rowLogo': {
+        width: '580px',
+        display: 'flex',
+        justifyContent: 'space-between'
     },
     '& .highlightedInfo': {
         display: 'flex',
