@@ -17,7 +17,21 @@ const cardsList = [
 ];
 
 export default function HomePage() {
-    const [qrCodeImage, setQrCodeImage] = React.useState(qrCodeMensal)
+    const [flipImage, setFlipImage] = React.useState(true);
+
+    function handleToggleUnica() {
+        if (flipImage == false) {
+            setFlipImage(!flipImage);
+        } 
+    };
+
+    function handleToggleMensal() {
+        if (flipImage == true) {
+            setFlipImage(!flipImage);
+        } 
+    };
+
+
     return (
         <>
             <MainDiv>
@@ -95,10 +109,27 @@ export default function HomePage() {
                     <div className='donationComponent'>
                         <div className='donationButtonContainer'>
                             <p className='donationText'>Central de Doações</p>
-                            <Button variant="contained" >Doação Única</Button>
-                            <Button variant="contained" >Doação Mensal</Button>
+                            <Button 
+                                className = {flipImage ? 'btnDonationActive' : 'btnDonationDisabled'}
+                                variant="contained" 
+                                onClick={handleToggleUnica}
+                            >Doação Única</Button>
+                            <Button 
+                                className = {flipImage ?  'btnDonationDisabled' : 'btnDonationActive' }
+                                variant="contained" 
+                                onClick={handleToggleMensal}
+                            >Doação Mensal</Button>
                         </div>
-                        <img src={qrCodeImage ? `${qrCodeMensal}` : `${qrCodeUnico}`} alt="QR Code Doação" />
+                        <div className= 'donationQRcodeScene'>
+                            <div className={`flipQrCode ${flipImage ? 'is-flipped' : null}`}>
+                                <div className= 'qrCodeImg__face qrCodeImg__face--front'>
+                                    <img src={qrCodeMensal} alt="QR Code Doação Mensal" />
+                                </div>
+                                <div className= 'qrCodeImg__face qrCodeImg__face--back'>
+                                    <img src={qrCodeUnico} alt="QR Code Doação Único" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </MainDiv>

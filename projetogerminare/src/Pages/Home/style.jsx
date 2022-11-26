@@ -202,29 +202,75 @@ export const MainDiv = styled('div')({
             flexDirection: 'row',
             borderRadius: '8px',
             width: '400px',
-            maxHeight: '200px',
+            maxHeight: '220px',
             maxWidth: '95%',
             backgroundColor: '#fff',
 
             '& .donationButtonContainer': {
                 display: 'flex',
                 justifySelf: 'center',
+                justifyContent: 'space-evenly',
                 alingSelf: 'center',
                 flexDirection: 'column',
+                padding: '40px 0 40px 40px',
 
                 '& .donationText': {
                     width: '240px',
+                    margin: '0 0 10px 0',
                     font: ' 700 20px Montserrat, sans-serif',
                     color: '#1C1D52',
                 },
+
+                '& .btnDonationActive' : {
+                    font: ' 700 16px Montserrat, sans-serif',
+                    backgroundColor: '#26276D',
+                    height: '40px',
+                    margin: '5px 0'
+                },
+                '& .btnDonationDisabled' : {
+                    font: ' 700 16px Montserrat, sans-serif',
+                    color: '#26276D',
+                    backgroundColor: '#fff',
+                    height: '40px',
+                    margin: '5px 0'
+                }
             },
-            'img': {
+
+            '& .donationQRcodeScene' : {
+                display: 'inline-block',
+                perspective: '600px',
+            },
+
+            '& .flipQrCode' : {
+                position: 'relative',
+                transformStyle: 'preserve-3d',
+                transformOrigin: 'center right',
+                transition: 'transform 1s',
+            },
+
+            '& .flipQrCode.is-flipped':{
+                transform: 'translateX(-100%) rotateY(-180deg)',
+            },
+
+            '& .qrCodeImg__face': {
                 position: 'relative',
                 width: '150px',
                 height: '150px',
-                left: '80px',
-                top: '29px',
-            }
+                left: '40px',
+                top: '35px',
+                backfaceVisibility: 'hidden',
+            },
+
+            '& .qrCodeImg__face--back': {
+                position: 'relative',
+                width: '150px',
+                height: '150px',
+                left: '-40px',
+                top: '-115px',
+                transform: 'rotateY(180deg)',
+            },
+
+            
         }
     }
 })
