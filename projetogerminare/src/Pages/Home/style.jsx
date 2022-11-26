@@ -110,13 +110,23 @@ export const MainDiv = styled('div')({
         margin: '0',
         fontSize: '18px'
     },
+    '& .pagep2': {
+        color: 'white',
+    },
     '& .pageText': {
         color: '#323232',
         fontWeight: '600',
-        fontSize: '18px',
+        fontSize: '16px',
         width: '100%',
         marginBottom: '40px',
         textAlign: 'left'
+    },
+    '& .paget2': {
+        color: 'white',
+        width: '502px',
+        marginTop: '25px',
+        lineHeight: '21px',
+        fontSize: '18px'
     },
     '& .contentIcon': {
         width: '48px',
@@ -150,9 +160,9 @@ export const MainDiv = styled('div')({
         margin: '10px 0'
     },
     '& .cultureText': {
-        maxWidth: '420px',
+        maxWidth: '490px',
         textAlign: 'left',
-        fontSize: '16px',
+        fontSize: '17px',
         height: '241px',
         fontWeight: '600',
         color: '#323232'
@@ -173,15 +183,79 @@ export const MainDiv = styled('div')({
     },
     '& .cultureCnt': {
         display: 'flex',
-        marginTop: '38px',
         flexDirection: 'row',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        marginTop: '38px',
     },
     '& .videoCnt': {
         backgroundImage: `url(${WavyBackground})`,
         height: '100vh',
+        margin: 0,
+        height: '603px',
         backgroundSize: 'cover',
-        marginTop: '200px'
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        marginTop: '200px',
+        display: 'flex',
+        flexDirection: 'column'
+    },
+    '& .videoContent': {
+        height: '100%',
+        width: '82vw',
+        marginTop: '-75px',
+        position: 'absolute',
+        display: 'flex',
+        flexDirection: 'row'
+    },
+    '& .ytvideo': {
+        borderRadius: '8px',
+        minWidth: '580px'
+    },
+    '& .retroText': {
+        marginLeft: '80px',
+        width: '500px',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        height: '276px',
+    },
+    '& .mediaCircle': {
+        width: '65px',
+        height: '65px',
+        borderRadius: '50%',
+        backgroundColor: 'white',
+    },
+    '& .mediaCnt': {
+        display: 'flex',
+        flexDirection: 'row',
+        width: '230px',
+        justifyContent: 'space-around',
+        marginRight: 'auto'
+    },
+    '& .mediaIcon': {
+        width: '42px',
+        height: '32px',
+        marginTop: '17.5px'
+    },
+    '& .companiesCnt': {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginTop: '280px'
+    },
+    '& .companyLogo': {
+        width: '95px',
+        height: '95px'
+    },
+    '& .logoCnt': {
+        display: 'flex',
+        flexDirection: 'column',
+        marginTop: '45px'
+    },
+    '& .rowLogo': {
+        width: '580px',
+        display: 'flex',
+        justifyContent: 'space-between'
     },
     '& .highlightedInfo': {
         display: 'flex',

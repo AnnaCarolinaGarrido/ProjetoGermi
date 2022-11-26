@@ -8,7 +8,17 @@ import CltImg from './Assets/CltImg.svg'
 import qrCodeMensal from './Assets/qrCodeMensal.png'
 import qrCodeUnico from './Assets/qrCodeUnico.png'
 import Button from '@mui/material/Button';
-import WavyBackground from './Assets/WavyBackground.svg';
+import Instagram from './Assets/Instagram (1).svg'
+import Facebook from './Assets/Facebook (1).svg'
+import Youtube from './Assets/Youtube.svg'
+import Seara from './Assets/Seara.svg'
+import Swift from './Assets/Swift.svg'
+import BancoOriginal from './Assets/BancoOriginal.svg'
+import Picpay from './Assets/Picpay.svg'
+import Friboi from './Assets/Friboi.svg'
+import Flora from './Assets/Flora.svg'
+import JeF from './Assets/J&F.svg'
+
 const cardsList = [
     { id: '#191A4B', title: 'Ensino 100% gratuito', text: 'A Escola Germinare oferece um ensino totalmente gratuito e integral, com professores altamente qualificados com dedicação exclusiva à escola.', img: BookIcon },
     { id: '#26276', title: 'Escola tecnológica', text: 'Temos wi-fi 6, fornecimento de notebook, salas de aula climatizadas 100% digitais, com equipamentos de última geração.', img: SignalIcon },
@@ -69,9 +79,9 @@ export default function HomePage() {
                     <div className="culture">
                         <h3 className='pageTitle'> Sobre nossa cultura </h3>
                         <div className="cultureCnt">
-                                <div className="cultureCircle">
-                                    <img className="cltImg" src={CltImg}/>
-                                </div>
+                            <div className="cultureCircle">
+                                <img className="cltImg" src={CltImg} />
+                            </div>
                             <div className="cultureText">
                                 <div>
                                     <h3 className='pageTitle pagep'> Nossa missão </h3>
@@ -102,7 +112,51 @@ export default function HomePage() {
                     </div>
                 </section>
                 <div className='videoCnt'>
-                    <h3 className='pageTitle'> Sobre nossa escola </h3>
+                    <div className="videoContent content">
+                        <iframe id="ytplayer" type="text/html" width="580" height="276"
+                            src="http://www.youtube.com/embed/kCRyWjl9SjE?autoplay=1&origin=http://example.com"
+                            frameborder="0" className='ytvideo' />
+                        <div className='retroText'>
+                            <div>
+                                <h3 className='pageTitle pagep'> Assista a nossa retrospectiva </h3>
+                                <p className='pageText'>
+                                    No dia 8 de fevereiro, completamos 12 anos de Escola Germinare. Acompanhe toda a nossa evolução em um vídeo para representar nossa história.
+                                </p>
+                            </div>
+                            <div className="mediaCnt">
+                                <div className="mediaCircle">
+                                    <img src={Youtube} className="mediaIcon" />
+                                </div>
+                                <div className="mediaCircle">
+                                    <img src={Instagram} className="mediaIcon" />
+                                </div>
+                                <div className="mediaCircle">
+                                    <img src={Facebook} className="mediaIcon" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="companiesCnt content">
+                        <div>
+                            <h3 className='pageTitle pagep2'> Nossas empresas parceiras </h3>
+                            <p className='pageText paget2'>
+                                Conheça o grupo J&F, um dos maiores conglomerados brasileiros, que explora diferentes segmentos do mercado de consumo brasileiro e mundial. É através dessa parceira, que a Germinare consegue sustentar o ensino de qualidade e preparação para o ambiente profissional.
+                            </p>
+                        </div>
+                        <div className="logoCnt">
+                            <div className="rowLogo">
+                                <img src={JeF} className="companyLogo" />
+                                <img src={Seara} className="companyLogo" />
+                                <img src={Swift} className="companyLogo" />
+                                <img src={Friboi} className="companyLogo" />
+                            </div>
+                            <div className="rowLogo">
+                                <img src={Flora} className="companyLogo"/> 
+                                <img src={BancoOriginal} className="companyLogo" style={{width: '180px'}}/>
+                                <img src={Picpay} className="companyLogo" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </MainDiv>
         </>
