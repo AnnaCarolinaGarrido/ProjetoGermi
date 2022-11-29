@@ -68,8 +68,3 @@ button {
   .search-button .search-icon {
     transition: all 0.3s ease-in-out;
   }
-  .search-button.active,
-  .search-button:hover {
-    background-color: #eeeeee;
-    border-radius: 50%;
-  }

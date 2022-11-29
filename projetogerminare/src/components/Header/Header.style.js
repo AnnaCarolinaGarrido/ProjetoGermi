@@ -9,7 +9,7 @@ export const StyledHeader = styled.div`
 
 export const HeaderContainer = styled.div`
     width: 100%;
-    height: 60px;
+    height: 70px;
     display: flex;
     box-shadow: 0px 4px 4px 0px #00000040;
     position: sticky;
@@ -31,6 +31,15 @@ export const ContentContainer = styled.div`
     justify-content: center;
     align-items: center;
     color: #2E3092;
+
+    > a, img {
+        cursor: pointer;
+        transition: color 0.5s ease-out
+    }
+
+    > a: hover {
+        color: #252525;
+    }
 `;
 
 export const StyledLogo = styled.img`
@@ -38,7 +47,7 @@ export const StyledLogo = styled.img`
 `
 
 export const MenuContainer = styled.div`
-    width: 50%;
+    width: 45%;
     box-shadow: 0px 4px 4px 0px #00000040;
     position: sticky;
     justify-content: center;
@@ -47,7 +56,7 @@ export const MenuContainer = styled.div`
     font-family: Montserrat, sans-serif;
     background-color: #ffffff;
     position: absolute;
-    top: 60px;
+    top: 70px;
     z-index: 2;
 `;
 
@@ -60,13 +69,13 @@ export const StyledInput = styled.input`
     font-size: 14px;
     border-radius: 8px;
     margin: 30px 0 0 10px;
-    width: 75%;
+    width: 85%;
     padding: 10px;
 `;
 
 export const ItemsContainer = styled.div`
     margin: 20px 0;
-    width: 75%;
+    width: 85%;
     > div > a {
         border-bottom: 1.5px solid #CFCFCF;
     }
@@ -78,7 +87,6 @@ export const ItemsContainer = styled.div`
         background-color: #F5F5F5;
         cursor: pointer;
         border-radius: 12px;
-        padding: 0 5px;
     }
     > div > img {
         width: 30px;

@@ -9,7 +9,7 @@ import firstLine from '../../assets/Header/firstline.svg';
 import jornal from '../../assets/Header/clipboardtick.svg';
 import { useFilter } from "../../utils/useFilter";
 
-export function Header(props) {
+export function Header() {
 
     const menuItemContent = [
         {
@@ -52,7 +52,7 @@ export function Header(props) {
         <StyledHeader>
             <HeaderContainer>
                 <ContentContainer>
-                    <a><StyledLogo src={logo} alt="Logo Germinare" /></a>
+                    <StyledLogo src={logo} alt="Logo Germinare" />
                     <a>Sobre a escola</a>
                     <a>Admissão</a>
                     <a>Acadêmico</a>
