@@ -208,7 +208,7 @@ const SliderWrapper = styled("div")`
     width: 100%;
     padding: 0;
     margin: 0;
-    top: 86vh;
+    top: 66vh;
 
     list-style: none;
 

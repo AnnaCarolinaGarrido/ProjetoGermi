@@ -21,6 +21,8 @@ import JBS from './Assets/Jbs.svg'
 import CoinIcon from './Assets/CoinIcon.svg'
 import Slider from "react-slick";
 import SliderWrapper from "./_SlickSliderStyle";
+import LandingPage from '../../components/LandingPage/LandingPage';
+import HeaderImg from './Assets/HeaderImg.svg'
 
 const cardsList = [
     { id: '#191A4B', title: 'Ensino 100% gratuito', text: 'A Escola Germinare oferece um ensino totalmente gratuito e integral, com professores altamente qualificados com dedicação exclusiva à escola.', img: BookIcon },
@@ -71,44 +73,17 @@ export default function HomePage() {
                 <SliderWrapper>
                     <Slider {...settings}>
                         <div className="testimoni--wrapper">
-                            <div className="slider">
-                                <div className="sliderContent">
-                                    <h3 className="subtitle"> Germinatech </h3>
-                                    <h1 className="maintitle"> Ensino médio de tecnologia </h1>
-                                    <p className="description"> Ensino Médio Integrado com Técnico em Desenvolvimento de Sistemas </p>
-                                    <div className="btnWhite"> Conheça mais </div>
-                                </div>
-                            </div>
+                            <LandingPage subtitle='germinatech' title='Ensino médio
+                            de tecnologia' description='Ensino Médio Integrado com Técnico em Desenvolvimento de Sistemas.' buttonText='Saiba Mais' backgroundImage='${HeaderImg}' />
                         </div>
                         <div className="testimoni--wrapper">
-                        <div className="slider">
-                            <div className="sliderContent">
-                                <h3 className="subtitle"> Germinatech </h3>
-                                <h1 className="maintitle"> Ensino médio de tecnologia </h1>
-                                <p className="description"> Ensino Médio Integrado com Técnico em Desenvolvimento de Sistemas </p>
-                                <div className="btnWhite"> Conheça mais </div>
-                            </div>
-                        </div>
+                            <LandingPage subtitle='acadêmico' title='Projeto acadêmico' description='Confirá já a lista dos convidados a participarem da 4ª fase da amissão' buttonText='Confira Já' />
                         </div>
                         <div className="testimoni--wrapper">
-                        <div className="slider">
-                            <div className="sliderContent">
-                                <h3 className="subtitle"> Germinatech </h3>
-                                <h1 className="maintitle"> Ensino médio de tecnologia </h1>
-                                <p className="description"> Ensino Médio Integrado com Técnico em Desenvolvimento de Sistemas </p>
-                                <div className="btnWhite"> Conheça mais </div>
-                            </div>
-                        </div>
+                            <LandingPage subtitle='admissão' title='Processo de Admissão 2023' description='Confirá já a lista dos convidados a participarem da 4ª fase da admissão' buttonText='Confira Já' />
                         </div>
                         <div className="testimoni--wrapper">
-                        <div className="slider">
-                            <div className="sliderContent">
-                                <h3 className="subtitle"> Germinatech </h3>
-                                <h1 className="maintitle"> Ensino médio de tecnologia </h1>
-                                <p className="description"> Ensino Médio Integrado com Técnico em Desenvolvimento de Sistemas </p>
-                                <div className="btnWhite"> Conheça mais </div>
-                            </div>
-                        </div>
+                            <LandingPage subtitle='sobre a escola' title='Conheça as academias' description='Confirá já a lista dos convidados a participarem da 4ª fase da admissão' buttonText='Saiba Mais' />
                         </div>
                     </Slider>
                 </SliderWrapper>
