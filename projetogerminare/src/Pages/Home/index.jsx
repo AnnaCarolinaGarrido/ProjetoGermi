@@ -18,7 +18,6 @@ import CanalRural from './Assets/CanalRural.svg'
 import Eldorado from './Assets/Eldorado.svg'
 import Flora from './Assets/Flora.svg'
 import JBS from './Assets/Jbs.svg'
-import CoinIcon from './Assets/CoinIcon.svg'
 import Slider from "react-slick";
 import SliderWrapper from "./_SlickSliderStyle";
 import LandingPage from '../../components/LandingPage/LandingPage';
@@ -26,6 +25,8 @@ import HeaderImg from './Assets/HeaderImg.svg'
 import HeaderImg2 from './Assets/HeaderImg2.svg'
 import HeaderImg3 from './Assets/HeaderImg3.svg'
 import HeaderImg4 from './Assets/HeaderImg4.svg'
+import "./styles.scss";
+
 const cardsList = [
     { id: '#191A4B', title: 'Ensino 100% gratuito', text: 'A Escola Germinare oferece um ensino totalmente gratuito e integral, com professores altamente qualificados com dedicação exclusiva à escola.', img: BookIcon },
     { id: '#26276', title: 'Escola tecnológica', text: 'Temos wi-fi 6, fornecimento de notebook, salas de aula climatizadas 100% digitais, com equipamentos de última geração.', img: SignalIcon },
@@ -42,7 +43,7 @@ const settings = {
     slidesToScroll: 1,
     infinite: true,
     initialSlide: 0,
-    speed: 400,
+    speed: 300,
     arrows: false,
     adaptiveHeight: true,
     appendDots: dots => <ul>{dots}</ul>,
@@ -95,19 +96,19 @@ export default function HomePage() {
                 <div className="generalInfo">
                     <div>
                         <div className='infoContainer'>
-                            <div className='numberInfo'>  12 anos <sup className='plusIcon'> + </sup>  </div>
+                            <div className='numberInfo'>  12 anos <sup className='plusIcon'> · </sup>  </div>
                         </div>
                         <div className='dcpInfo'> fazendo história </div>
                     </div>
                     <div>
                         <div className='infoContainer'>
-                            <div className='numberInfo'> + 500  <sup className='plusIcon'> + </sup> </div>
+                            <div className='numberInfo'> + 500  <sup className='plusIcon'> · </sup> </div>
                         </div>
                         <div className='dcpInfo'> alunos </div>
                     </div>
                     <div>
                         <div className='infoContainer'>
-                            <div className='numberInfo'> 6359m² <sup className='plusIcon'> + </sup> </div>
+                            <div className='numberInfo'> 6359m² <sup className='plusIcon'> · </sup> </div>
                         </div>
                         <div className='dcpInfo'> de estrutura </div>
                     </div>
@@ -149,7 +150,7 @@ export default function HomePage() {
                 <section className="highlightedInfo">
                     <div className='highlightedInfoText'>
                         <h1>
-                            AMIGO GERMINARE COMO DOAR?
+                            DOAÇÕES
                         </h1>
                         <p>
                             O desafio da Escola Germinare é tornar-se uma referência no setor da educação, a partir da excelência na qualidade, proposta acadêmica diferenciada e de sua missão em formar jovens administradores de empresas e cidadãos. Venha fazer parte deste legado!
@@ -196,77 +197,10 @@ export default function HomePage() {
                             <img src={Flora} className="companiesRest" />
                         </div>
                     </div>
+                </div>
+                <div className="contacts">
                     <h3 className='pageTitle'> Nossos Contatos </h3>
                     <div className="contacts">
-                        <div className="contatoCtn">
-                            <p className="cttTitle"> Informações sobre doação </p>
-                            <div className="cntCtt">
-                                <div className="circle">
-                                    <img className="iconCtt" src={CoinIcon} />
-                                </div>
-                                <div className="contato">
-                                    instituto@germinare.org.br
-                                </div>
-                            </div>
-                        </div>
-                        <div className="contatoCtn">
-                            <p className="cttTitle"> Telefones </p>
-                            <div className="cntCtt">
-                                <div className="circle">
-                                    <img className="iconCtt" src={CoinIcon} />
-                                </div>
-                                <div className="contato">
-                                    (11) 3623-6000 / (11) 96479-9498
-                                </div>
-                            </div>
-                        </div>
-                        <div className="contatoCtn">
-                            <p className="cttTitle"> Ouvidoria </p>
-                            <div className="cntCtt">
-                                <div className="circle">
-                                    <img className="iconCtt" src={CoinIcon} />
-                                </div>
-                                <div className="contato">
-                                    ouvidoria@germinare.org.br
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div className="contacts">
-                        <div className="contatoCtn">
-                            <p className="cttTitle"> Imprensa </p>
-                            <div className="cntCtt">
-                                <div className="circle">
-                                    <img className="iconCtt" src={CoinIcon} />
-                                </div>
-                                <div className="contato">
-                                    comunicacao@germinare.org.br
-                                </div>
-                            </div>
-                        </div>
-                        <div className="contatoCtn">
-                            <p className="cttTitle"> Admissão </p>
-                            <div className="cntCtt">
-                                <div className="circle">
-                                    <img className="iconCtt" src={CoinIcon} />
-                                </div>
-                                <div className="contato">
-                                    admissao@germinare.org.br
-                                </div>
-                            </div>
-                        </div>
-                        <div className="contatoCtn">
-                            <p className="cttTitle"> Trabalhe Conosco </p>
-                            <div className="cntCtt">
-                                <div className="circle">
-                                    <img className="iconCtt" src={CoinIcon} />
-                                </div>
-                                <div className="contato">
-                                    rh@germinare.org.br
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div className='videoCnt'>

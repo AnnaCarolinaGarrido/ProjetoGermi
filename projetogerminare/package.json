@@ -22,6 +22,7 @@
     "react-owl-carousel": "^2.3.3",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
+    "sass": "^1.56.1",
     "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4"
   },
@@ -29,6 +30,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "sass": "node-sass styles/sass/main.scss styles/css/style.css -w",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
