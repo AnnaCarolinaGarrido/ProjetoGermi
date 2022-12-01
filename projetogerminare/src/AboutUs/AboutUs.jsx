@@ -47,7 +47,7 @@ export default function AboutUs() {
   const settings = {
     dots: true,
     arrows: false,
-    infinite: false,
+    infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     vertical: true,
@@ -56,6 +56,11 @@ export default function AboutUs() {
     centerMode: true,
     className: "center",
     centerPadding: '0%',
+    autoplay: true,
+    autoplayDuration: 6000,
+    pauseOnHover: true,
+    fade: true,
+    speed: 500,
     customPaging: i => (
       <div
         className="dot"
@@ -70,6 +75,7 @@ export default function AboutUs() {
     }
   };
 
+  
   
   return (
     <main className="mainContainer">
@@ -111,7 +117,7 @@ export default function AboutUs() {
           <img src={children} alt="alunos junto a diretora em 2022" />
           <h3 className="date-label">24 de fevereiro de 2022</h3>
           <div className="content">
-            <p>
+            <p style={{marginTop: 30}}>
               Por um lado, é possível dizer que os ideais do Instituto sempre
               estiveram presentes na história da J&F Investimentos e logo, sua
               trajetória remete à constituição e desenvolvimento do Grupo, ao

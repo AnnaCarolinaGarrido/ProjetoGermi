@@ -13,6 +13,7 @@ section {
     #33359d 66.63%,
     #0003a0 99.89%
   );
+  border-radius: 8px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   height: 267px;
   position: relative;
@@ -170,17 +171,22 @@ h3 {
 .slider-item{
     background-color: white;
     min-height: 322px;
-    border-radius: 8px;
+    border-radius: 8px !important;
     display: flex;
     margin: -2px 0;
+    width: auto !important;
+}
+.slider-container div{
+  border-radius: 8px;
 }
 .slider-item-wrapper{
     display: flex;
     align-items: center;
     height: 322px;
     gap: 100px;
-    margin-left: -80px;
-
+    margin-left: -60px;
+    border-radius: 0px !important;
+    width: 1150px;
 }
 .sliderText{
     max-width: 618px;
@@ -199,6 +205,9 @@ h3 {
 .sliderText p{
     font-size: 18px;
     font-weight: 400;
+}
+.slick-list{
+  overflow: visible !important;
 }
 
 
