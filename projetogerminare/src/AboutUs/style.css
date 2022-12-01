@@ -3,6 +3,7 @@
 }
 section {
   margin-top: 100px;
+  font-family: Montserrat, sans-serif;
 }
 .legacy {
   background: linear-gradient(
@@ -198,4 +199,318 @@ h3 {
 .sliderText p{
     font-size: 18px;
     font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+.divCertificados {
+  display: flex;
+  margin-top: 60px;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+}
+
+.divIndividualCertificados {
+  width: 100%;
+  min-width: 260px;
+  display: flex;
+  border-radius: 8px;
+  min-height: 400px;
+  height: fit-content;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+}
+
+.divBlueCertificados {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  max-width: 300px;
+  height: 350px;
+  width: 100%;
+  background-color: #26276D;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.divBrancaCertificados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 340px;
+  max-width: 340px;
+  height: 150px;
+  margin-top: 160px;
+  background-color: #F8F8F8;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.textCertificados {
+  text-align: center;
+  color: #1C1D52;
+  font-size: 16px;
+  font-weight: 600;
+  max-width: 300px;
+  width: 80%;
+}
+
+
+.divTriangular {
+  margin-top: 159px;
+  z-index: 2;
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #26276D;
+}
+
+.certificadosImg{
+  width: 190px;
+  height: 85px;
+  margin-top: 40px;
+}
+
+.titleText {
+  color: #2E3092;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+.divEscolaDaFamilia {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+}
+
+.divMidleContent{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  margin-right: 40px;
+}
+
+.divImgAndText{
+  display: flex;
+  width: 100%;
+  max-width: 700px;
+  margin-top: 25px;
+}
+
+.spacingDiv{
+  display: flex;
+  margin-left: 20px;
+  flex-direction: column;  
+}
+
+.textConteudoEscola{
+  margin: 0;
+  color: #1D1D1D;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.LinkEscola{
+  text-align: center;
+  position: absolute;
+  margin: 320px 12px; 
+  max-width: 360px;
+  width: 100%;
+  text-decoration: none;
+  padding: 10px 8px;
+  border-radius: 12px;
+  background-color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 700;
+  color: #191A4B;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+
+.divValores{
+  display: flex;
+  margin-top: 40px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.DivCardValores{
+  display: flex;
+  border-radius: 12px;
+  height: 180px;
+  min-width: 345px;
+  max-width: 1180px;
+  background: #F6F6F6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition:  all 0.4s ease-out;
+}
+
+.DivCardValores:hover{
+  background: linear-gradient(180deg, #3E40A7 0%, #26276D 100%);
+}
+
+.DivCardValores:hover .intDivValores{
+  display: none;
+}
+
+.DivCardValores:hover .textoAdicional{
+  opacity: 1;
+  font-size: 14px;
+  width: 100%;
+  margin: auto 20px;
+}
+
+.textoAdicional{
+  font-size: 0px;
+  opacity: 0;
+  color: #FFFFFF;
+  width: 0;
+  max-width: 300px;
+  margin: 0;
+  transition: opacity 1s  ease-out;
+}
+.intDivValores{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: left;
+  margin-left: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 300px;
+  height: 130px;
+}
+
+.IconValores{
+  width: 45px;
+  height: 45px;
+}
+
+
+
+.divAmigoGerminare{ 
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1180px;
+  height: 393px;
+  border-radius: 8px;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.divAmigoGerminareContent{
+  flex-direction: column;
+  justify-content: center;
+  height: 310px;
+}
+
+.divAmigoGerminareTitle{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #3D3D3D;
+}
+
+.divAmigoGerminareText{
+  font-size: 14px;
+  font-weight: 600;
+  width: 250px;
+  margin-top: 7px;
+  text-align: center;
+  color: #3D3D3D;
+}
+
+.LinkQrCode{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.divImgGerminare{
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+.barraCinza{
+  width: 0;
+  height: 250px;
+  border: 1px solid #CFCFCF;
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+
+.divParaTextoAmigoGerminare{
+  max-width: 500px;
+  height: 310px;
+  margin-top: 85px;
+}
+
+.textTitle{
+  margin-top: 0;
+  width: 100%;
+  color: #2E3092;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.textConteudo{
+  margin: 20px 0;
+  color: #1D1D1D;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4rem;
+}
+
+.textSubConteudo{
+  font-size: 14px;
+  font-weight: 500;
+  max-width: 365px;
+  width: 100%;
+  color: #1D1D1D;
+}
+
+.buttonContent{
+  text-transform: uppercase;
+  position: absolute;
+  margin-top: -22px;
+  padding: 5px;
+  width: 160px;
+  background-color: #21C25E;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 8px;
+  text-align: center;
 }
