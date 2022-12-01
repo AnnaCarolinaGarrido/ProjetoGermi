@@ -8,12 +8,14 @@ export const MainDiv = styled('div')({
     boxSizing: 'border-box',
     padding: '0',
     margin: '0',
+    backgroundColor: 'white',
     '& .slider': {
         backgroundColor: '#D2D2D2',
         backgroundImage: `linear-gradient(to right,rgb(25, 26, 75, 1), rgb(25, 26, 75, 0)), url(${HeaderImg})`,
         backgroundSize: 'cover',
         height: '603px',
         color: '#ffffff',
+        marginBottom: '20px',
         lineHeight: '55px',
         display: 'flex',
         justifyContent: 'space-between'
@@ -42,7 +44,7 @@ export const MainDiv = styled('div')({
     },
     '& .description': {
         fontSize: '18px',
-        lineHeight: '26px',
+        lineHeight: '25px',
         fontWeight: '400',
         marginBottom: '0px',
     },
@@ -97,7 +99,7 @@ export const MainDiv = styled('div')({
         margin: '0 auto',
     },
     '& .content': {
-        margin: '0 9vw 0 9vw',
+        margin: '0 8vw 0 8vw',
     },
     '& .pageTitle': {
         marginTop: '61px',
@@ -115,7 +117,8 @@ export const MainDiv = styled('div')({
     },
     '& .pageText': {
         color: '#323232',
-        fontWeight: '600',
+        fontWeight: '500',
+        lineHeight: '25px',
         fontSize: '16px',
         width: '100%',
         marginBottom: '40px',
@@ -125,7 +128,7 @@ export const MainDiv = styled('div')({
         color: 'white',
         width: '502px',
         marginTop: '25px',
-        lineHeight: '21px',
+        lineHeight: '25px',
         fontSize: '18px'
     },
     '& .contentIcon': {
@@ -137,7 +140,7 @@ export const MainDiv = styled('div')({
         color: '#ffffff',
         fontWeight: '500',
         borderRadius: '8px',
-        width: '16vw',
+        width: '16.5vw',
         height: '190px',
         textAlign: 'left',
         padding: '25px'
@@ -162,15 +165,16 @@ export const MainDiv = styled('div')({
     '& .cultureText': {
         maxWidth: '490px',
         textAlign: 'left',
-        fontSize: '17px',
+        fontSize: '16px',
         height: '241px',
-        fontWeight: '600',
+        lineHeight: '25px',
+        fontWeight: '500',
         color: '#323232'
     },
     '& .cltImg': {
         zIndex: '0',
         borderRadius: '8px',
-        width: '539px',
+        width: '585px',
         height: 'fit-content',
         marginTop: '-40px'
     },
@@ -189,9 +193,8 @@ export const MainDiv = styled('div')({
     },
     '& .videoCnt': {
         backgroundImage: `url(${WavyBackground})`,
-        height: '100vh',
         margin: 0,
-        height: '603px',
+        height: '451.1px',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
@@ -202,7 +205,7 @@ export const MainDiv = styled('div')({
     '& .videoContent': {
         height: '100%',
         width: '82vw',
-        marginTop: '-75px',
+        marginTop: '-17vh',
         position: 'absolute',
         display: 'flex',
         flexDirection: 'row'
@@ -228,24 +231,34 @@ export const MainDiv = styled('div')({
     '& .mediaCnt': {
         display: 'flex',
         flexDirection: 'row',
-        width: '230px',
+        width: '250px',
         justifyContent: 'space-around',
         marginRight: 'auto'
     },
     '& .mediaIcon': {
-        width: '42px',
-        height: '32px',
-        marginTop: '17.5px'
+        width: '34.53px',
+        height: '34.53px',
+        marginTop: '15.5px'
+    },
+    '& .mediaIconExt': {
+        width: '44.53px',
+        height: '39.53px',
+        marginTop: '13.5px'
     },
     '& .companiesCnt': {
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
-        marginTop: '280px'
+        '& .companyLogo' : {
+            width: '95px',
+            height: '95px'
+        }
     },
-    '& .companyLogo': {
-        width: '95px',
-        height: '95px'
+    '& .companiesExt': {
+        width: '140px',
+    },
+    '& .companiesRest': {
+        width: '58px',
     },
     '& .logoCnt': {
         display: 'flex',
@@ -256,6 +269,74 @@ export const MainDiv = styled('div')({
         width: '580px',
         display: 'flex',
         justifyContent: 'space-between'
+    },
+    '& .contatoCtn': {
+        width: '350px',
+        height: '110px',
+        borderRadius: '8px',
+        marginBottom: '35px',
+        display: 'flex',
+        backgroundColor: '#F2F2F2',
+        flexDirection: 'column'
+    },
+    '& .cttTitle': {
+        fontSize: '16px',
+        fontWeight: '700',
+        color: '#1C1D52',
+        height: '10px'
+    },
+    '& .cttText': {
+        fontSize: '18px',
+        fontWeight: '500',
+        color: '#1C1D52'
+    },
+    '& .cntCtt': {
+        display: 'flex',
+        flexDirection: 'row',
+        margin: '0 auto',
+        marginTop: '0px',
+    },   
+    '& .contacts': {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+    },
+    '& .circle': {
+        backgroundColor: '#1C1D52',
+        width: '50px',
+        height: '50px',
+        borderRadius: '50%',
+        marginRight: '-30px',
+        zIndex: 1
+    },
+    '& .iconCtt': {
+        marginTop: '8px'
+    },
+    '& .contato': {
+        backgroundColor: 'white',
+        width: '255px',
+        height: '35px',
+        borderRadius: '0 8px 8px 0',
+        zIndex: 0,
+        fontWeight: '600',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        fontSize: '13px',
+        boxShadow: '0.10rem 0.10rem 0.15rem rgba(0, 0, 0, 0.15)',
+        marginLeft: '20px',
+        marginTop: '10px',
+        color: '#1C1D52'
+    },
+    '& .lineWhite': {
+        backgroundColor: 'white',
+        height: '2px',
+        width: '95vw',
+        marginTop: '260px',
+        marginLeft: '1.75vw'
+    },
+    '& .slick-dots li button:before': {
+        color: 'red'
     },
     '& .highlightedInfo': {
         display: 'flex',
@@ -291,7 +372,7 @@ export const MainDiv = styled('div')({
                 color: 'white',
                 width: '95%',
                 maxWidth: '550px',
-                lineHeight: '21px',
+                lineHeight: '25px',
                 textAlign: 'left'
             }
         },
@@ -369,9 +450,7 @@ export const MainDiv = styled('div')({
                 left: '-40px',
                 top: '-115px',
                 transform: 'rotateY(180deg)',
-            },
-
-            
+            }, 
         }
     }
 })
