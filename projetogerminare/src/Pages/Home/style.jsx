@@ -3,17 +3,22 @@ import HeaderImg from './Assets/HeaderImg.svg'
 import WavyBackground from './Assets/WavyBackground.svg';
 
 export const MainDiv = styled('div')({
-    // fontFamily: 'Montserrat, sans-serif',
-    // boxSizing: 'border-box',
-    // padding: '0',
-    // margin: '0',
-    // backgroundColor: 'white',
-    // '& .infoContainer': {
-    //     display: 'flex',
-    //     flesDirection: 'row',
-    //     marginBottom: '20px',
-    //     height: '75px'
-    // },
+    fontFamily: 'Montserrat, sans-serif',
+    boxSizing: 'border-box',
+    padding: '0',
+    margin: '0',
+    backgroundColor: '#ffffff',
+    '& .infoContainer': {
+        display: 'flex',
+        flesDirection: 'row',
+        marginBottom: '20px',
+        height: '75px'
+    },
+    '& .numberInfo' : {
+        fontSize: '60px',
+        marginBottom: '10px',
+        fontWeight: 700
+    },
     '& .plusIcon': {
         fontSize: '70px',
         fontFamily: 'Varela Round, sans-serif'

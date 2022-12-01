@@ -25,7 +25,6 @@ import HeaderImg from './Assets/HeaderImg.svg'
 import HeaderImg2 from './Assets/HeaderImg2.svg'
 import HeaderImg3 from './Assets/HeaderImg3.svg'
 import HeaderImg4 from './Assets/HeaderImg4.svg'
-import "./styles.scss";
 
 const cardsList = [
     { id: '#191A4B', title: 'Ensino 100% gratuito', text: 'A Escola Germinare oferece um ensino totalmente gratuito e integral, com professores altamente qualificados com dedicação exclusiva à escola.', img: BookIcon },
@@ -45,7 +44,8 @@ const settings = {
     initialSlide: 0,
     speed: 300,
     arrows: false,
-    adaptiveHeight: true,
+    adaptiveHeight: false,
+    pauseOnHover: false,
     appendDots: dots => <ul>{dots}</ul>,
     customPaging: i => (
         <div className="ft-slick__dots--custom">
@@ -96,19 +96,19 @@ export default function HomePage() {
                 <div className="generalInfo">
                     <div>
                         <div className='infoContainer'>
-                            <div className='numberInfo'>  12 anos <sup className='plusIcon'> · </sup>  </div>
+                            <div className='numberInfo'>  12 anos <sup className='plusIcon'> + </sup>  </div>
                         </div>
                         <div className='dcpInfo'> fazendo história </div>
                     </div>
                     <div>
                         <div className='infoContainer'>
-                            <div className='numberInfo'> + 500  <sup className='plusIcon'> · </sup> </div>
+                            <div className='numberInfo'> + 500  <sup className='plusIcon'> + </sup> </div>
                         </div>
                         <div className='dcpInfo'> alunos </div>
                     </div>
                     <div>
                         <div className='infoContainer'>
-                            <div className='numberInfo'> 6359m² <sup className='plusIcon'> · </sup> </div>
+                            <div className='numberInfo'> 6359m² <sup className='plusIcon'> + </sup> </div>
                         </div>
                         <div className='dcpInfo'> de estrutura </div>
                     </div>
