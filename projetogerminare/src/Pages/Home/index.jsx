@@ -8,16 +8,19 @@ import CltImg from './Assets/CltImg.svg'
 import qrCodeMensal from './Assets/qrCodeMensal.png'
 import qrCodeUnico from './Assets/qrCodeUnico.png'
 import Button from '@mui/material/Button';
-import Instagram from './Assets/Instagram (1).svg'
-import Facebook from './Assets/Facebook (1).svg'
+import Instagram from './Assets/Instagram.svg'
+import Facebook from './Assets/Facebook.svg'
 import Youtube from './Assets/Youtube.svg'
-import Seara from './Assets/Seara.svg'
-import Swift from './Assets/Swift.svg'
 import BancoOriginal from './Assets/BancoOriginal.svg'
 import Picpay from './Assets/Picpay.svg'
-import Friboi from './Assets/Friboi.svg'
+import Ambar from './Assets/Ambar.svg'
+import CanalRural from './Assets/CanalRural.svg'
+import Eldorado from './Assets/Eldorado.svg'
 import Flora from './Assets/Flora.svg'
-import JeF from './Assets/J&F.svg'
+import JBS from './Assets/Jbs.svg'
+import CoinIcon from './Assets/CoinIcon.svg'
+import Slider from "react-slick";
+import SliderWrapper from "./_SlickSliderStyle";
 
 const cardsList = [
     { id: '#191A4B', title: 'Ensino 100% gratuito', text: 'A Escola Germinare oferece um ensino totalmente gratuito e integral, com professores altamente qualificados com dedicação exclusiva à escola.', img: BookIcon },
@@ -26,32 +29,91 @@ const cardsList = [
     { id: '#4446B6', title: 'Estágios nas empresas', text: 'Projeto acadêmico com os estágios remunerados, que os interliga e garante a formação de profissionais capacitados para o ambiente de trabalho.', img: CompaniesIcon },
 ];
 
+const settings = {
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    initialSlide: 0,
+    speed: 400,
+    arrows: false,
+    adaptiveHeight: true,
+    appendDots: dots => <ul>{dots}</ul>,
+    customPaging: i => (
+        <div className="ft-slick__dots--custom">
+            <div className="loading" />
+        </div>
+    )
+};
+
 export default function HomePage() {
     const [flipImage, setFlipImage] = React.useState(true);
 
     function handleToggleUnica() {
         if (flipImage == false) {
             setFlipImage(!flipImage);
-        } 
+        }
     };
 
     function handleToggleMensal() {
         if (flipImage == true) {
             setFlipImage(!flipImage);
-        } 
+        }
     };
 
 
     return (
         <>
             <MainDiv>
-                <div className="slider">
-                    <div className="sliderContent">
-                        <h3 className="subtitle"> Germinatech </h3>
-                        <h1 className="maintitle"> Ensino médio de tecnologia </h1>
-                        <p className="description"> Ensino Médio Integrado com Técnico em Desenvolvimento de Sistemas </p>
-                        <div className="btnWhite"> Conheça mais </div>
-                    </div>
+                <SliderWrapper>
+                    <Slider {...settings}>
+                        <div className="testimoni--wrapper">
+                            <div className="slider">
+                                <div className="sliderContent">
+                                    <h3 className="subtitle"> Germinatech </h3>
+                                    <h1 className="maintitle"> Ensino médio de tecnologia </h1>
+                                    <p className="description"> Ensino Médio Integrado com Técnico em Desenvolvimento de Sistemas </p>
+                                    <div className="btnWhite"> Conheça mais </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="testimoni--wrapper">
+                        <div className="slider">
+                            <div className="sliderContent">
+                                <h3 className="subtitle"> Germinatech </h3>
+                                <h1 className="maintitle"> Ensino médio de tecnologia </h1>
+                                <p className="description"> Ensino Médio Integrado com Técnico em Desenvolvimento de Sistemas </p>
+                                <div className="btnWhite"> Conheça mais </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div className="testimoni--wrapper">
+                        <div className="slider">
+                            <div className="sliderContent">
+                                <h3 className="subtitle"> Germinatech </h3>
+                                <h1 className="maintitle"> Ensino médio de tecnologia </h1>
+                                <p className="description"> Ensino Médio Integrado com Técnico em Desenvolvimento de Sistemas </p>
+                                <div className="btnWhite"> Conheça mais </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div className="testimoni--wrapper">
+                        <div className="slider">
+                            <div className="sliderContent">
+                                <h3 className="subtitle"> Germinatech </h3>
+                                <h1 className="maintitle"> Ensino médio de tecnologia </h1>
+                                <p className="description"> Ensino Médio Integrado com Técnico em Desenvolvimento de Sistemas </p>
+                                <div className="btnWhite"> Conheça mais </div>
+                            </div>
+                        </div>
+                        </div>
+                    </Slider>
+                </SliderWrapper>
+                <div style={{ marginBottom: '20px' }}>
+
                 </div>
                 <div className="generalInfo">
                     <div>
@@ -119,29 +181,117 @@ export default function HomePage() {
                     <div className='donationComponent'>
                         <div className='donationButtonContainer'>
                             <p className='donationText'>Central de Doações</p>
-                            <Button 
-                                className = {flipImage ? 'btnDonationActive' : 'btnDonationDisabled'}
-                                variant="contained" 
+                            <Button
+                                className={flipImage ? 'btnDonationActive' : 'btnDonationDisabled'}
+                                variant="contained"
                                 onClick={handleToggleUnica}
                             >Doação Única</Button>
-                            <Button 
-                                className = {flipImage ?  'btnDonationDisabled' : 'btnDonationActive' }
-                                variant="contained" 
+                            <Button
+                                className={flipImage ? 'btnDonationDisabled' : 'btnDonationActive'}
+                                variant="contained"
                                 onClick={handleToggleMensal}
                             >Doação Mensal</Button>
                         </div>
-                        <div className= 'donationQRcodeScene'>
+                        <div className='donationQRcodeScene'>
                             <div className={`flipQrCode ${flipImage ? 'is-flipped' : null}`}>
-                                <div className= 'qrCodeImg__face qrCodeImg__face--front'>
+                                <div className='qrCodeImg__face qrCodeImg__face--front'>
                                     <img src={qrCodeMensal} alt="QR Code Doação Mensal" />
                                 </div>
-                                <div className= 'qrCodeImg__face qrCodeImg__face--back'>
+                                <div className='qrCodeImg__face qrCodeImg__face--back'>
                                     <img src={qrCodeUnico} alt="QR Code Doação Único" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
+                <div className="content">
+                    <div className="companies">
+                        <h3 className='pageTitle'> Conheça nossas empresas parceiras </h3>
+                        <p className='pageText'>Somos o maior grupo privado não financeiro do Brasil, com mais de 267 mil colaboradores em todo o mundo. Conheça nossas áreas de atuação.
+                            É através dessa parceira, que a Germinare consegue sustentar o ensino de qualidade e preparação para o ambiente profissional.  </p>
+                        <div className='companiesCnt'>
+                            <img src={BancoOriginal} className="companiesExt" />
+                            <img src={Eldorado} className="companiesExt" />
+                            <img src={Picpay} className="companyLogo" />
+                            <img src={CanalRural} className="companiesExt" />
+                            <img src={Ambar} className="companyLogo" />
+                            <img src={JBS} className="companyLogo" />
+                            <img src={Flora} className="companiesRest" />
+                        </div>
+                    </div>
+                    <h3 className='pageTitle'> Nossos Contatos </h3>
+                    <div className="contacts">
+                        <div className="contatoCtn">
+                            <p className="cttTitle"> Informações sobre doação </p>
+                            <div className="cntCtt">
+                                <div className="circle">
+                                    <img className="iconCtt" src={CoinIcon} />
+                                </div>
+                                <div className="contato">
+                                    instituto@germinare.org.br
+                                </div>
+                            </div>
+                        </div>
+                        <div className="contatoCtn">
+                            <p className="cttTitle"> Telefones </p>
+                            <div className="cntCtt">
+                                <div className="circle">
+                                    <img className="iconCtt" src={CoinIcon} />
+                                </div>
+                                <div className="contato">
+                                    (11) 3623-6000 / (11) 96479-9498
+                                </div>
+                            </div>
+                        </div>
+                        <div className="contatoCtn">
+                            <p className="cttTitle"> Ouvidoria </p>
+                            <div className="cntCtt">
+                                <div className="circle">
+                                    <img className="iconCtt" src={CoinIcon} />
+                                </div>
+                                <div className="contato">
+                                    ouvidoria@germinare.org.br
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className="contacts">
+                        <div className="contatoCtn">
+                            <p className="cttTitle"> Imprensa </p>
+                            <div className="cntCtt">
+                                <div className="circle">
+                                    <img className="iconCtt" src={CoinIcon} />
+                                </div>
+                                <div className="contato">
+                                    comunicacao@germinare.org.br
+                                </div>
+                            </div>
+                        </div>
+                        <div className="contatoCtn">
+                            <p className="cttTitle"> Admissão </p>
+                            <div className="cntCtt">
+                                <div className="circle">
+                                    <img className="iconCtt" src={CoinIcon} />
+                                </div>
+                                <div className="contato">
+                                    admissao@germinare.org.br
+                                </div>
+                            </div>
+                        </div>
+                        <div className="contatoCtn">
+                            <p className="cttTitle"> Trabalhe Conosco </p>
+                            <div className="cntCtt">
+                                <div className="circle">
+                                    <img className="iconCtt" src={CoinIcon} />
+                                </div>
+                                <div className="contato">
+                                    rh@germinare.org.br
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className='videoCnt'>
                     <div className="videoContent content">
                         <iframe id="ytplayer" type="text/html" width="580" height="276"
@@ -156,7 +306,7 @@ export default function HomePage() {
                             </div>
                             <div className="mediaCnt">
                                 <div className="mediaCircle">
-                                    <img src={Youtube} className="mediaIcon" />
+                                    <img src={Youtube} className="mediaIconExt" />
                                 </div>
                                 <div className="mediaCircle">
                                     <img src={Instagram} className="mediaIcon" />
@@ -167,27 +317,7 @@ export default function HomePage() {
                             </div>
                         </div>
                     </div>
-                    <div className="companiesCnt content">
-                        <div>
-                            <h3 className='pageTitle pagep2'> Nossas empresas parceiras </h3>
-                            <p className='pageText paget2'>
-                                Conheça o grupo J&F, um dos maiores conglomerados brasileiros, que explora diferentes segmentos do mercado de consumo brasileiro e mundial. É através dessa parceira, que a Germinare consegue sustentar o ensino de qualidade e preparação para o ambiente profissional.
-                            </p>
-                        </div>
-                        <div className="logoCnt">
-                            <div className="rowLogo">
-                                <img src={JeF} className="companyLogo" />
-                                <img src={Seara} className="companyLogo" />
-                                <img src={Swift} className="companyLogo" />
-                                <img src={Friboi} className="companyLogo" />
-                            </div>
-                            <div className="rowLogo">
-                                <img src={Flora} className="companyLogo"/> 
-                                <img src={BancoOriginal} className="companyLogo" style={{width: '180px'}}/>
-                                <img src={Picpay} className="companyLogo" />
-                            </div>
-                        </div>
-                    </div>
+                    <div className="lineWhite"></div>
                 </div>
             </MainDiv>
         </>
