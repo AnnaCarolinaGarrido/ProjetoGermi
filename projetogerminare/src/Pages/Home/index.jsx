@@ -23,7 +23,9 @@ import Slider from "react-slick";
 import SliderWrapper from "./_SlickSliderStyle";
 import LandingPage from '../../components/LandingPage/LandingPage';
 import HeaderImg from './Assets/HeaderImg.svg'
-
+import HeaderImg2 from './Assets/HeaderImg2.svg'
+import HeaderImg3 from './Assets/HeaderImg3.svg'
+import HeaderImg4 from './Assets/HeaderImg4.svg'
 const cardsList = [
     { id: '#191A4B', title: 'Ensino 100% gratuito', text: 'A Escola Germinare oferece um ensino totalmente gratuito e integral, com professores altamente qualificados com dedicação exclusiva à escola.', img: BookIcon },
     { id: '#26276', title: 'Escola tecnológica', text: 'Temos wi-fi 6, fornecimento de notebook, salas de aula climatizadas 100% digitais, com equipamentos de última geração.', img: SignalIcon },
@@ -74,16 +76,16 @@ export default function HomePage() {
                     <Slider {...settings}>
                         <div className="testimoni--wrapper">
                             <LandingPage subtitle='germinatech' title='Ensino médio
-                            de tecnologia' description='Ensino Médio Integrado com Técnico em Desenvolvimento de Sistemas.' buttonText='Saiba Mais' backgroundImage='${HeaderImg}' />
+                            de tecnologia' description='Ensino Médio Integrado com Técnico em Desenvolvimento de Sistemas.' buttonText='Conheça Mais' backgroundImage={HeaderImg} />
                         </div>
                         <div className="testimoni--wrapper">
-                            <LandingPage subtitle='acadêmico' title='Projeto acadêmico' description='Confirá já a lista dos convidados a participarem da 4ª fase da amissão' buttonText='Confira Já' />
+                            <LandingPage subtitle='acadêmico' title='Projeto acadêmico' description='Confirá já a lista dos convidados a participarem da 4ª fase da amissão' buttonText='Confira Já' backgroundImage={HeaderImg2} />
                         </div>
                         <div className="testimoni--wrapper">
-                            <LandingPage subtitle='admissão' title='Processo de Admissão 2023' description='Confirá já a lista dos convidados a participarem da 4ª fase da admissão' buttonText='Confira Já' />
+                            <LandingPage subtitle='admissão' title='Processo de Admissão 2023' description='Confirá já a lista dos convidados a participarem da 4ª fase da admissão' buttonText='Confira Já' backgroundImage={HeaderImg3} />
                         </div>
                         <div className="testimoni--wrapper">
-                            <LandingPage subtitle='sobre a escola' title='Conheça as academias' description='Confirá já a lista dos convidados a participarem da 4ª fase da admissão' buttonText='Saiba Mais' />
+                            <LandingPage subtitle='sobre a escola' title='Conheça as academias' description='Confirá já a lista dos convidados a participarem da 4ª fase da admissão' buttonText='Confira Já' backgroundImage={HeaderImg4} />
                         </div>
                     </Slider>
                 </SliderWrapper>
