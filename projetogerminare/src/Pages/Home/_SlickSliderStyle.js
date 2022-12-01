@@ -291,7 +291,7 @@ const SliderWrapper = styled("div")`
     height: 10px;
     width: 18px;
     background-color: #FFFFFF;
-    border-radius: 4px;
+    border-radius: 5px;
     position: relative;
   }
 

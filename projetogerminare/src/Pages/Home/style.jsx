@@ -36,7 +36,10 @@ export const MainDiv = styled('div')({
     },
     '& .dcpInfo': {
         fontSize: '25px',
-        fontWeight: '700'
+        fontWeight: '700',
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'center',
     },
     '& .line': {
         width: '400px',
