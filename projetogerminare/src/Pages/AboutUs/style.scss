@@ -173,7 +173,7 @@
       }
       .slick-dots{
           transform: rotate(90deg);
-          right: -480px;
+          right: -500px;
           bottom: 40%!important;
       }
       .dot{
@@ -186,7 +186,7 @@
           background-color: #363894;
       }
       .slider-item{
-          background-color: white;
+          background-color: transparent;
           min-height: 322px;
           border-radius: 8px !important;
           display: flex;
@@ -197,13 +197,25 @@
         border-radius: 8px;
       }
       .slider-item-wrapper{
+        background-color: transparent;
           display: flex;
           align-items: center;
           height: 322px;
           gap: 100px;
-          margin-left: -60px;
           border-radius: 0px !important;
           width: 1150px;
+          .adjust{
+            display: flex;
+            align-items: center;
+            height: 322px;
+            gap: 100px;
+            width: 100%;
+            background-color: white;
+            margin-left: 60px;
+            img{
+              margin-left: -60px;
+            }
+          }
       }
       .sliderText{
           max-width: 618px;
@@ -223,20 +235,6 @@
           font-size: 18px;
           font-weight: 400;
       }
-      .slick-list{
-        overflow: visible !important;
-      }
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
       .divCertificados {
         display: flex;
         flex-direction: column;

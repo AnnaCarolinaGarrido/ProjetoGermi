@@ -52,9 +52,6 @@ export default function AboutUs() {
     vertical: true,
     verticalSwiping: true,
     swipeToSlide: true,
-    centerMode: true,
-    className: "center",
-    centerPadding: '0%',
     autoplay: true,
     autoplayDuration: 6000,
     pauseOnHover: true,
@@ -206,51 +203,61 @@ export default function AboutUs() {
               <Slider {...settings}>
                 <div className="slider-item">
                   <div className='slider-item-wrapper'>
-                    <img src={friboi} alt="trabalhadora friboi" />
-                    <div className="sliderText">
-                      <span>Academias Germinare</span>
-                      <h4>Academia Friboi</h4>
-                      <p>Você já teve dúvidas de como resolver algum problema difícil?A Academia de Commodities esclarece diversos tipos de metodologias diferentes para a solução de problemas. Dessa forma, ela aproxima o dia a dia das operações frigoríficas e dos Centros de Distribuição (CD´s) para gerar mais conhecimento e bagagem profissional nas variadas áreas de forma consistente e acelerada.</p>
+                    <div className="adjust">
+                      <img src={friboi} alt="trabalhadora friboi" />
+                      <div className="sliderText">
+                        <span>Academias Germinare</span>
+                        <h4>Academia Friboi</h4>
+                        <p>Você já teve dúvidas de como resolver algum problema difícil?A Academia de Commodities esclarece diversos tipos de metodologias diferentes para a solução de problemas. Dessa forma, ela aproxima o dia a dia das operações frigoríficas e dos Centros de Distribuição (CD´s) para gerar mais conhecimento e bagagem profissional nas variadas áreas de forma consistente e acelerada.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div className="slider-item">
                   <div className='slider-item-wrapper'>
-                    <img src={original} alt="trabalhadora friboi" />
-                    <div className="sliderText">
-                      <span>Área de Finanças</span>
-                      <h4>Academia Original</h4>
-                      <p>Com o intuito de despertar curiosidade para a vida financeira e relacionar os conceitos teóricos com a prática profissional é que a Academia de Finanças foi criada. Por meio de projetos disciplinares e constante contato com profissionais da área financeira, os alunos aprendem diversos conceitos econômicos, desenvolvem a capacidade de resolução de problemas e adquirem conhecimento a respeito de produtos e serviços bancários e financeiros.</p>
+                    <div className="adjust">
+                      <img src={original} alt="trabalhadora friboi" />
+                      <div className="sliderText">
+                        <span>Área de Finanças</span>
+                        <h4>Academia Original</h4>
+                        <p>Com o intuito de despertar curiosidade para a vida financeira e relacionar os conceitos teóricos com a prática profissional é que a Academia de Finanças foi criada. Por meio de projetos disciplinares e constante contato com profissionais da área financeira, os alunos aprendem diversos conceitos econômicos, desenvolvem a capacidade de resolução de problemas e adquirem conhecimento a respeito de produtos e serviços bancários e financeiros.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div className="slider-item">
                   <div className='slider-item-wrapper'>
-                    <img src={picpay} alt="trabalhadora friboi" />
-                    <div className="sliderText">
-                      <span>Área de Tecnologia</span>
-                      <h4>Academia PicPay</h4>
-                      <p>Na Germinare, a Academia de Tecnologia foi desenvolvida para atender a demanda dos alunos e do mercado de trabalho atual. Durante as aulas, os estudantes aprendem sobre tecnologias digitais e experiência do usuário, com foco no desenvolvimento e gestão de negócios e na interpretação de Demonstrativos de Resultados (DRE) de uma empresa.</p>
+                    <div className="adjust">
+                      <img src={picpay} alt="trabalhadora friboi" />
+                      <div className="sliderText">
+                        <span>Área de Tecnologia</span>
+                        <h4>Academia PicPay</h4>
+                        <p>Na Germinare, a Academia de Tecnologia foi desenvolvida para atender a demanda dos alunos e do mercado de trabalho atual. Durante as aulas, os estudantes aprendem sobre tecnologias digitais e experiência do usuário, com foco no desenvolvimento e gestão de negócios e na interpretação de Demonstrativos de Resultados (DRE) de uma empresa.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div className="slider-item">
                   <div className='slider-item-wrapper'>
-                    <img src={swift} alt="trabalhadora friboi" />
-                    <div className="sliderText">
-                      <span>Área de Serviços</span>
-                      <h4>Academia Swift</h4>
-                      <p>A Academia de Serviços fornece um conteúdo focado em Gestão de Negócios no varejo com ênfase em conhecimento de produto, gestão de pessoas, atendimento superlativo, vendas, expansão, sustentabilidade e transformação digital. Assim, os alunos possuem uma visão prática e muito próxima à realidade do negócio.</p>
+                    <div className="adjust">
+                      <img src={swift} alt="trabalhadora friboi" />
+                      <div className="sliderText">
+                        <span>Área de Serviços</span>
+                        <h4>Academia Swift</h4>
+                        <p>A Academia de Serviços fornece um conteúdo focado em Gestão de Negócios no varejo com ênfase em conhecimento de produto, gestão de pessoas, atendimento superlativo, vendas, expansão, sustentabilidade e transformação digital. Assim, os alunos possuem uma visão prática e muito próxima à realidade do negócio.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div className="slider-item">
                   <div className='slider-item-wrapper'>
-                    <img src={friboi} alt="trabalhadora friboi" />
-                    <div className="sliderText">
-                      <span>Área de Commodities</span>
-                      <h4>Academia Friboi</h4>
-                      <p>Você já teve dúvidas de como resolver algum problema difícil?A Academia de Commodities esclarece diversos tipos de metodologias diferentes para a solução de problemas. Dessa forma, ela aproxima o dia a dia das operações frigoríficas e dos Centros de Distribuição (CD´s) para gerar mais conhecimento e bagagem profissional nas variadas áreas de forma consistente e acelerada.</p>
+                    <div className="adjust">
+                      <img src={friboi} alt="trabalhadora friboi" />
+                      <div className="sliderText">
+                        <span>Área de Commodities</span>
+                        <h4>Academia Friboi</h4>
+                        <p>Você já teve dúvidas de como resolver algum problema difícil?A Academia de Commodities esclarece diversos tipos de metodologias diferentes para a solução de problemas. Dessa forma, ela aproxima o dia a dia das operações frigoríficas e dos Centros de Distribuição (CD´s) para gerar mais conhecimento e bagagem profissional nas variadas áreas de forma consistente e acelerada.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
