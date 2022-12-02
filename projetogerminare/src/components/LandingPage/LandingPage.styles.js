@@ -7,7 +7,7 @@ export const Slider = styled.div`
     > div {
         background-color: #D2D2D2;
         background-size: cover;
-        height: 600px;
+        height: 500px;
         color: #ffffff;
         display: flex;
         justify-content: space-between;

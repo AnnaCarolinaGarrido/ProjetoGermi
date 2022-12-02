@@ -1,11 +1,11 @@
 import { styled } from "@mui/material";
-import HeaderImg from './Assets/HeaderImg.svg'
 import WavyBackground from './Assets/WavyBackground.svg';
 
 export const MainDiv = styled('div')({
     fontFamily: 'Montserrat, sans-serif',
     boxSizing: 'border-box',
     padding: '0',
+    maxHeight: 'fit-content',
     margin: '0',
     backgroundColor: '#ffffff',
     '& .infoContainer': {
@@ -143,18 +143,16 @@ export const MainDiv = styled('div')({
     '& .videoCnt': {
         backgroundImage: `url(${WavyBackground})`,
         margin: 0,
-        height: '451.1px',
+        height: '280px',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
         marginTop: '200px',
         display: 'flex',
         flexDirection: 'column'
     },
     '& .videoContent': {
-        height: '100%',
         width: '82vw',
-        marginTop: '-17vh',
+        marginTop: '-15vh',
         position: 'absolute',
         display: 'flex',
         flexDirection: 'row'

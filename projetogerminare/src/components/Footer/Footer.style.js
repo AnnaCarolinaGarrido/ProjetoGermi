@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ComponentFooter = styled("div")`
   display: flex;
-  background-color: #474747;
+  background-color: #191A4B;
   color: white;
   padding: 40px 20px;
 

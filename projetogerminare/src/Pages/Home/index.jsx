@@ -199,7 +199,7 @@ export default function HomePage() {
                         </div>
                     </div>
                 </div>
-                <div className="contacts">
+                <div className="contacts content">
                     <h3 className='pageTitle'> Nossos Contatos </h3>
                     <div className="contacts">
                     </div>

@@ -1,5 +1,4 @@
 #about-us {
-    max-width: 98vw;
     margin-left: 8vw;
     margin-right: 8vw;
     .mainContainer {
@@ -12,10 +11,8 @@
       .legacy {
         background: linear-gradient(
           90.13deg,
-          #f0f0ff 6.86%,
-          #7071b4 33.36%,
-          #33359d 66.63%,
-          #0003a0 99.89%
+          #191A4B,
+          #4446B6
         );
         border-radius: 8px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -43,10 +40,10 @@
       }
       
       h3 {
-        background: #2e3092;
+        background: #2E3092;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         font-size: 16px;
-        padding: 8px 10px;
+        padding: 8px 20px;
         border-radius: 2px;
         font-weight: 700;
         color: white;
@@ -57,25 +54,30 @@
         position: absolute;
         bottom: 8%;
         margin: 0 auto;
-        min-width: 370px;
+        min-width: 320px;
       }
       .legacy .contentContainer {
         margin: 60px 0;
         margin-left: 80px;
-        margin-top: 30px;
+        margin-top: 39px;
       }
       .legacy .contentContainer h2 {
         text-transform: uppercase;
       }
       .legacy .contentContainer p {
         max-width: 610px;
-        font-size: 18px;
+        font-size: 16px;
+        line-height: 25px;
       }
       .origins {
         display: flex;
         flex-direction: column;
         position: relative;
         gap: 26px;
+      }
+      .origins img {
+        height: 253px;
+        width: 333px
       }
       .origins > div {
         display: flex;
@@ -90,7 +92,10 @@
         text-transform: uppercase;
       }
       .content {
-        max-width: 600px;
+        max-width: 750px;
+      }
+      .content p {
+        line-height: 25px;
       }
       .rebuilding div {
         display: flex;
