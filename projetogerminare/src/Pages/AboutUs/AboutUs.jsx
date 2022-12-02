@@ -65,13 +65,7 @@ export default function AboutUs() {
         className="dot"
       >
       </div>
-    ),
-    beforeChange: function (currentSlide, nextSlide) {
-      console.log("before change", currentSlide, nextSlide);
-    },
-    afterChange: function (currentSlide) {
-      console.log("after change", currentSlide);
-    }
+    )
   };
 
 
@@ -202,36 +196,19 @@ export default function AboutUs() {
             </div>
           </div>
         </section>
-        <section className="academys">
-          <h2 className="section-title">SOBRE NOSSAS ACADEMIAS</h2>
-          <div className="intro">
-            <img src={academy_instagram} alt="@academiasgerminare" />
-            <p>
-              A escola Germinare, por meio de um currículo inovador, proporciona o
-              diploma de Técnico em Administração de Empresas ao concluir o Ensino
-              Médio. Para isso, dividimos as disciplinas em áreas do conhecimento,
-              as Academias Germinare. Assim como todos os trabalhos com bons
-              resultados, há um grupo de pessoas diferentes contribuindo com os seus
-              melhores atributos para concluir o objetivo da equipe. No caso das
-              Academias, temos a parceria de seis empresas do Grupo J&F: Banco
-              Original, Friboi, Flora, Seara, PicPay e Swift. Falaremos nesse perfil
-              sobre o trabalho incrível que elas estão fazendo junto com os
-              professores da Germinare.
-            </p>
-          </div>
-        </section>
         <section className="carousel">
           <div className="sliderBg">
           </div>
           <div className="slider-container">
             <h2>ÁREAS DE CONHECIMENTO</h2>
+            <p className="textp"> A escola Germinare divide suas disciplinas em áreas do conhecimento, as Academias Germinare. Assim, temos a parceria de seis empresas do Grupo J&F: <b>Banco Original, Friboi, Flora, Seara, PicPay e Swift. </b> </p>
             <div style={{ marginTop: 40 }}>
               <Slider {...settings}>
                 <div className="slider-item">
                   <div className='slider-item-wrapper'>
                     <img src={friboi} alt="trabalhadora friboi" />
                     <div className="sliderText">
-                      <span>Área de Commodities</span>
+                      <span>Academias Germinare</span>
                       <h4>Academia Friboi</h4>
                       <p>Você já teve dúvidas de como resolver algum problema difícil?A Academia de Commodities esclarece diversos tipos de metodologias diferentes para a solução de problemas. Dessa forma, ela aproxima o dia a dia das operações frigoríficas e dos Centros de Distribuição (CD´s) para gerar mais conhecimento e bagagem profissional nas variadas áreas de forma consistente e acelerada.</p>
                     </div>
@@ -282,7 +259,7 @@ export default function AboutUs() {
           </div>
         </section>
 
-        <section>
+
           <div className="divCertificados">
             <p className="titleText">CERTIFICADOS</p>
             <div className="divIndividualCertificados">
@@ -318,7 +295,7 @@ export default function AboutUs() {
               </div>
             </div>
           </div>
-        </section>
+
 
         <section>
           <p className="textTitle">ESCOLA DA FAMÍLIA</p>

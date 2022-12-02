@@ -141,13 +141,11 @@
         font-size: 18px;
       }
       .carousel .sliderBg {
-        background: linear-gradient(
-          90deg,
-          rgba(68, 70, 182, 0.94) 0.85%,
-          rgba(25, 26, 75, 0.94) 98.74%
+        background: linear-gradient(90deg,
+          #191A4B, #4446B6
         );
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        width: 100vw;
+        width: 101.5vw;
         height: 100%;
         position: absolute;
         left: -150px;
@@ -158,10 +156,20 @@
         position: relative;
       }
       .slider-container{
-          padding: 80px 0;
+          padding: 60px 0;
       }
+      .textp{
+        color: white;
+        line-height: 25px;
+        margin-top: 40px;
+        margin-bottom: 40px
+        }
       .slider-container h2{
           color: white;
+          font-weight: 700;
+      }
+      #about-us .slider-container div {
+        max-width: fit-content;
       }
       .slick-dots{
           transform: rotate(90deg);

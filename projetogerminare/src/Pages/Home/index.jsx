@@ -26,7 +26,6 @@ import HeaderImg2 from './Assets/HeaderImg2.svg'
 import HeaderImg3 from './Assets/HeaderImg3.svg'
 import HeaderImg4 from './Assets/HeaderImg4.svg'
 import Form from '../../components/Form/Form';
-import "./styles.scss";
 
 const cardsList = [
     { id: '#191A4B', title: 'Ensino 100% gratuito', text: 'A Escola Germinare oferece um ensino totalmente gratuito e integral, com professores altamente qualificados com dedicação exclusiva à escola.', img: BookIcon },
