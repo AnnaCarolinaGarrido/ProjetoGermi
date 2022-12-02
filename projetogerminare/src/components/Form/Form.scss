@@ -1,0 +1,68 @@
+$blue: #191A4B;
+
+.outside-container {
+    background-color: #FFFFFF;
+    width: 500px;
+    border-radius: .8rem;
+    padding: 40px 20px;
+    border: 1px solid red;
+}
+
+.inner-container h3 {
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: $blue;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.inner-container form {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.9rem;
+}
+
+.inner-container form input {
+    border: 0;
+    border-bottom: 0.15rem solid $blue;
+    padding-bottom: 0.55rem;
+    font-size: 14px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: #232323;
+    outline: none;
+}
+
+.inner-container form input::placeholder {
+    color: $blue;
+    font-size: 1.4rem;
+}
+
+.inner-container button {
+    border-radius: 1.2rem;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border: 1px solid red;
+    background-color: $blue;
+    cursor: pointer;
+}
+
+.recaptcha {
+    align-self: center;
+    border: 1px solid red;
+    width: 300px;
+    height: 75px;
+}
+
+.email-error {
+    color: #ff6961;
+    font-size: 1rem;
+    font-family: "Montserrat";
+    position: absolute;
+    top: 24rem;
+}

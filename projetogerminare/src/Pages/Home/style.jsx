@@ -214,7 +214,10 @@ export const MainDiv = styled('div')({
     '& .contacts': {
         display: 'flex',
         flexDirection: 'row',
-        justifyContent: 'space-between',
+        '& .gmap_iframe': {
+            width: '82vw',
+            height: '200px'
+        }
     },
     '& .circle': {
         backgroundColor: '#1C1D52',
