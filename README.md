@@ -6,8 +6,8 @@
 ![Badge Concluído](http://img.shields.io/static/v1?label=STATUS&message=CONCLUÍDO&color=blue&style=for-the-badge)
 
 ### Modelo das branchs
-@feat/nome-da-feature -- adicionar nova funcionalidade
-@refactor/nome-da-feature -- ajustar estrutura do código e refatorar outros elementos (sem ser erro)
+@feat/nome-da-feature -- adicionar nova funcionalidade <br /> 
+@refactor/nome-da-feature -- ajustar estrutura do código e refatorar outros elementos (sem ser erro) <br />
 @fix/nome-da-feature -- corrigir erros e bugs
 
 ### Instalações
