@@ -238,12 +238,14 @@ export const MainDiv = styled('div')({
     '& .mediaIcon': {
         width: '34.53px',
         height: '34.53px',
-        marginTop: '15.5px'
+        marginTop: '15.5px',
+        marginLeft: '15px'
     },
     '& .mediaIconExt': {
         width: '44.53px',
         height: '39.53px',
-        marginTop: '13.5px'
+        marginTop: '13.5px',
+        marginLeft: '10px'
     },
     '& .companiesCnt': {
         display: 'flex',
