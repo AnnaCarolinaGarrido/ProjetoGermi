@@ -25,6 +25,8 @@ import HeaderImg from './Assets/HeaderImg.svg'
 import HeaderImg2 from './Assets/HeaderImg2.svg'
 import HeaderImg3 from './Assets/HeaderImg3.svg'
 import HeaderImg4 from './Assets/HeaderImg4.svg'
+import Form from '../../components/Form/Form';
+import "./styles.scss";
 
 const cardsList = [
     { id: '#191A4B', title: 'Ensino 100% gratuito', text: 'A Escola Germinare oferece um ensino totalmente gratuito e integral, com professores altamente qualificados com dedicação exclusiva à escola.', img: BookIcon },
@@ -199,11 +201,19 @@ export default function HomePage() {
                         </div>
                     </div>
                 </div>
-                <div className="contacts content">
-                    <h3 className='pageTitle'> Nossos Contatos </h3>
-                    <div className="contacts">
+
+                <div className="content">
+                    <div className="companies">
+                        <h3 className='pageTitle'>COMO NOS CONTATAR?</h3>                        
+                        <Form></Form>
+                        <div className='companiesCnt'>
+                            <div className="contacts">
+                                <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1440&amp;height=240&amp;hl=en&amp;q=Rua Irineu José Bordon, 335&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
                 <div className='videoCnt'>
                     <div className="videoContent content">
                         <iframe id="ytplayer" type="text/html" width="580" height="276"
