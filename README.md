@@ -12,11 +12,9 @@
 ```
 npm install
 ```
-Depois instale o MUI
 ```
 npm install @mui/material @emotion/react @emotion/styled
 ```
-Por fim...
 ```
 npm i react-google-recaptcha
 ```
