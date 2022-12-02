@@ -8,6 +8,7 @@ import bookMark from '../../assets/Header/bookmark.svg';
 import firstLine from '../../assets/Header/firstline.svg';
 import jornal from '../../assets/Header/clipboardtick.svg';
 import { useFilter } from "../../utils/useFilter";
+import {Routes, Route, useNavigate} from 'react-router-dom';
 
 export function Header() {
 
@@ -48,12 +49,23 @@ export function Header() {
         setShowMenu(current => !current)
     }
 
+    const navigate = useNavigate()
+
+    const navigateToAboutUs = () => {
+        // 👇️ navigate to /contacts
+        navigate('/sobre-nos');
+      };
+
+    const navigateHome = () => {
+        // 👇️ navigate to /
+        navigate('/');
+      };
     return (
         <StyledHeader>
             <HeaderContainer>
                 <ContentContainer>
-                    <StyledLogo src={logo} alt="Logo Germinare" />
-                    <a>Sobre a escola</a>
+                    <StyledLogo onClick={navigateHome} src={logo} alt="Logo Germinare" />
+                    <a onClick={navigateToAboutUs}>Sobre a escola</a>
                     <a>Admissão</a>
                     <a>Acadêmico</a>
                     <a>Governança</a>

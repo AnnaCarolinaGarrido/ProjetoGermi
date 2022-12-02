@@ -9,7 +9,7 @@ export default function LandingPage(props) {
                     <h3> {props.subtitle} </h3>
                     <h1> {props.title} </h1>
                     <p> {props.description} </p>
-                    <Button blue text={props.buttonText}></Button>
+                    <Button white text={props.buttonText}></Button>
                 </div>
             </div>
         </Slider>

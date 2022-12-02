@@ -3,17 +3,22 @@ import HeaderImg from './Assets/HeaderImg.svg'
 import WavyBackground from './Assets/WavyBackground.svg';
 
 export const MainDiv = styled('div')({
-    // fontFamily: 'Montserrat, sans-serif',
-    // boxSizing: 'border-box',
-    // padding: '0',
-    // margin: '0',
-    // backgroundColor: 'white',
-    // '& .infoContainer': {
-    //     display: 'flex',
-    //     flesDirection: 'row',
-    //     marginBottom: '20px',
-    //     height: '75px'
-    // },
+    fontFamily: 'Montserrat, sans-serif',
+    boxSizing: 'border-box',
+    padding: '0',
+    margin: '0',
+    backgroundColor: '#ffffff',
+    '& .infoContainer': {
+        display: 'flex',
+        flesDirection: 'row',
+        marginBottom: '20px',
+        height: '75px'
+    },
+    '& .numberInfo' : {
+        fontSize: '60px',
+        marginBottom: '10px',
+        fontWeight: 700
+    },
     '& .plusIcon': {
         fontSize: '70px',
         fontFamily: 'Varela Round, sans-serif'
@@ -31,7 +36,10 @@ export const MainDiv = styled('div')({
     },
     '& .dcpInfo': {
         fontSize: '25px',
-        fontWeight: '700'
+        fontWeight: '700',
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'center',
     },
     '& .line': {
         width: '400px',
@@ -179,12 +187,14 @@ export const MainDiv = styled('div')({
     '& .mediaIcon': {
         width: '34.53px',
         height: '34.53px',
-        marginTop: '15.5px'
+        marginTop: '15.5px',
+        marginLeft: '15px'
     },
     '& .mediaIconExt': {
         width: '44.53px',
         height: '39.53px',
-        marginTop: '13.5px'
+        marginTop: '13.5px',
+        marginLeft: '10px'
     },
     '& .companiesCnt': {
         display: 'flex',

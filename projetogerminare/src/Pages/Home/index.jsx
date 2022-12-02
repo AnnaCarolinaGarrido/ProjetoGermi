@@ -43,10 +43,12 @@ const settings = {
     slidesToShow: 1,
     slidesToScroll: 1,
     infinite: true,
+    pauseOnHover: false,
     initialSlide: 0,
     speed: 300,
     arrows: false,
-    adaptiveHeight: true,
+    adaptiveHeight: false,
+    pauseOnHover: false,
     appendDots: dots => <ul>{dots}</ul>,
     customPaging: i => (
         <div className="ft-slick__dots--custom">
@@ -97,19 +99,19 @@ export default function HomePage() {
                 <div className="generalInfo">
                     <div>
                         <div className='infoContainer'>
-                            <div className='numberInfo'>  12 anos <sup className='plusIcon'> · </sup>  </div>
+                            <div className='numberInfo'>  12 anos <sup className='plusIcon'> + </sup>  </div>
                         </div>
                         <div className='dcpInfo'> fazendo história </div>
                     </div>
                     <div>
                         <div className='infoContainer'>
-                            <div className='numberInfo'> + 500  <sup className='plusIcon'> · </sup> </div>
+                            <div className='numberInfo'> + 500  <sup className='plusIcon'> + </sup> </div>
                         </div>
                         <div className='dcpInfo'> alunos </div>
                     </div>
                     <div>
                         <div className='infoContainer'>
-                            <div className='numberInfo'> 6359m² <sup className='plusIcon'> · </sup> </div>
+                            <div className='numberInfo'> 6359m² <sup className='plusIcon'> + </sup> </div>
                         </div>
                         <div className='dcpInfo'> de estrutura </div>
                     </div>

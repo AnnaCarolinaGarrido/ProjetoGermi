@@ -208,7 +208,7 @@ const SliderWrapper = styled("div")`
     width: 100%;
     padding: 0;
     margin: 0;
-    top: 86vh;
+    top: 535px;
 
     list-style: none;
 
@@ -291,7 +291,7 @@ const SliderWrapper = styled("div")`
     height: 10px;
     width: 18px;
     background-color: #FFFFFF;
-    border-radius: 4px;
+    border-radius: 5px;
     position: relative;
   }
 
