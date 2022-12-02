@@ -25,6 +25,7 @@ import HeaderImg from './Assets/HeaderImg.svg'
 import HeaderImg2 from './Assets/HeaderImg2.svg'
 import HeaderImg3 from './Assets/HeaderImg3.svg'
 import HeaderImg4 from './Assets/HeaderImg4.svg'
+
 const cardsList = [
     { id: '#191A4B', title: 'Ensino 100% gratuito', text: 'A Escola Germinare oferece um ensino totalmente gratuito e integral, com professores altamente qualificados com dedicação exclusiva à escola.', img: BookIcon },
     { id: '#26276', title: 'Escola tecnológica', text: 'Temos wi-fi 6, fornecimento de notebook, salas de aula climatizadas 100% digitais, com equipamentos de última geração.', img: SignalIcon },
@@ -44,7 +45,8 @@ const settings = {
     initialSlide: 0,
     speed: 300,
     arrows: false,
-    adaptiveHeight: true,
+    adaptiveHeight: false,
+    pauseOnHover: false,
     appendDots: dots => <ul>{dots}</ul>,
     customPaging: i => (
         <div className="ft-slick__dots--custom">

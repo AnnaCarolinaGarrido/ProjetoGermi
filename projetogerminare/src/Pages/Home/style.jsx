@@ -1,5 +1,4 @@
 import { styled } from "@mui/material";
-import Box from "@mui/material"
 import HeaderImg from './Assets/HeaderImg.svg'
 import WavyBackground from './Assets/WavyBackground.svg';
 
@@ -8,73 +7,20 @@ export const MainDiv = styled('div')({
     boxSizing: 'border-box',
     padding: '0',
     margin: '0',
-    backgroundColor: 'white',
-    '& .slider': {
-        backgroundColor: '#D2D2D2',
-        backgroundImage: `linear-gradient(to right,rgb(25, 26, 75, 1), rgb(25, 26, 75, 0)), url(${HeaderImg})`,
-        backgroundSize: 'cover',
-        height: '603px',
-        color: '#ffffff',
-        marginBottom: '20px',
-        lineHeight: '55px',
-        display: 'flex',
-        justifyContent: 'space-between'
-    },
-    '& .sliderContent': {
-        textAlign: 'center',
-        display: 'flex',
-        flexDirection: 'column',
-        textAlign: 'left',
-        marginLeft: '9vw',
-        paddingTop: '130px',
-        maxWidth: '31%',
-    },
-    '& .subtitle': {
-        textTransform: 'uppercase',
-        fontSize: '20px',
-        fontWeight: '400',
-        letterSpacing: '7px',
-        margin: '0',
-    },
-    '& .maintitle': {
-        marginTop: '26.6px',
-        fontSize: '55px',
-        marginBottom: '0',
-        lineHeight: '58px',
-    },
-    '& .description': {
-        fontSize: '18px',
-        lineHeight: '25px',
-        fontWeight: '400',
-        marginBottom: '0px',
-    },
-    '& .btnWhite': {
-        width: '220px',
-        marginTop: '43px',
-        padding: '0 10px',
-        textTransform: 'uppercase',
-        textAlign: 'center',
-        backgroundColor: '#ffffff',
-        fontSize: '20px',
-        border: 'none',
-        borderRadius: '12px',
-        color: '#331A42',
-        fontWeight: '700',
-        cursor: 'pointer',
-    },
-    '& .numberInfo': {
-        fontSize: '60px',
-        marginBottom: '10px',
-        fontWeight: '700',
-    },
+    backgroundColor: '#ffffff',
     '& .infoContainer': {
         display: 'flex',
         flesDirection: 'row',
         marginBottom: '20px',
         height: '75px'
     },
-    '& .plusIcon': {
+    '& .numberInfo' : {
         fontSize: '60px',
+        marginBottom: '10px',
+        fontWeight: 700
+    },
+    '& .plusIcon': {
+        fontSize: '70px',
         fontFamily: 'Varela Round, sans-serif'
     },
     '& .generalInfo': {
@@ -90,7 +36,10 @@ export const MainDiv = styled('div')({
     },
     '& .dcpInfo': {
         fontSize: '25px',
-        fontWeight: '700'
+        fontWeight: '700',
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'center',
     },
     '& .line': {
         width: '400px',
@@ -110,7 +59,7 @@ export const MainDiv = styled('div')({
     },
     '& .pagep': {
         margin: '0',
-        fontSize: '18px'
+        fontSize: '16px'
     },
     '& .pagep2': {
         color: 'white',
@@ -129,7 +78,7 @@ export const MainDiv = styled('div')({
         width: '502px',
         marginTop: '25px',
         lineHeight: '25px',
-        fontSize: '18px'
+        fontSize: '16px'
     },
     '& .contentIcon': {
         width: '48px',
@@ -159,7 +108,7 @@ export const MainDiv = styled('div')({
         marginTop: '8px'
     },
     '& .cardTitle': {
-        fontSize: '18px',
+        fontSize: '16px',
         margin: '10px 0'
     },
     '& .cultureText': {
@@ -272,32 +221,6 @@ export const MainDiv = styled('div')({
         display: 'flex',
         justifyContent: 'space-between'
     },
-    '& .contatoCtn': {
-        width: '350px',
-        height: '110px',
-        borderRadius: '8px',
-        marginBottom: '35px',
-        display: 'flex',
-        backgroundColor: '#F2F2F2',
-        flexDirection: 'column'
-    },
-    '& .cttTitle': {
-        fontSize: '16px',
-        fontWeight: '700',
-        color: '#1C1D52',
-        height: '10px'
-    },
-    '& .cttText': {
-        fontSize: '18px',
-        fontWeight: '500',
-        color: '#1C1D52'
-    },
-    '& .cntCtt': {
-        display: 'flex',
-        flexDirection: 'row',
-        margin: '0 auto',
-        marginTop: '0px',
-    },   
     '& .contacts': {
         display: 'flex',
         flexDirection: 'row',
@@ -310,25 +233,6 @@ export const MainDiv = styled('div')({
         borderRadius: '50%',
         marginRight: '-30px',
         zIndex: 1
-    },
-    '& .iconCtt': {
-        marginTop: '8px'
-    },
-    '& .contato': {
-        backgroundColor: 'white',
-        width: '255px',
-        height: '35px',
-        borderRadius: '0 8px 8px 0',
-        zIndex: 0,
-        fontWeight: '600',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: '13px',
-        boxShadow: '0.10rem 0.10rem 0.15rem rgba(0, 0, 0, 0.15)',
-        marginLeft: '20px',
-        marginTop: '10px',
-        color: '#1C1D52'
     },
     '& .lineWhite': {
         backgroundColor: 'white',
@@ -367,7 +271,7 @@ export const MainDiv = styled('div')({
             },
 
             'p': {
-                font: '500 18px Montserrat, sans-serif',
+                font: '500 16px Montserrat, sans-serif',
                 marginTop: '30px',
                 wordWrap: 'break-word',
                 height: 'auto',
@@ -401,7 +305,7 @@ export const MainDiv = styled('div')({
                 '& .donationText': {
                     width: '240px',
                     margin: '0 0 10px 0',
-                    font: ' 700 20px Montserrat, sans-serif',
+                    font: ' 700 16px Montserrat, sans-serif',
                     color: '#1C1D52',
                 },
 
