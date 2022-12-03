@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Slider = styled.div`
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
     padding: 0;
     margin: 0;
     > div {
@@ -26,7 +27,7 @@ export const Slider = styled.div`
         font-size: 20px;
         font-weight: 400;
         letter-spacing: 8px;
-        margin: 0 0 40px 0;
+        margin: 70px 0 40px 0;
     };
     > div > div > h1 {
         font-size: 50px;

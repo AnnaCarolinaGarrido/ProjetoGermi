@@ -7,6 +7,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import LandingPage from "../../components/LandingPage/LandingPage";
+import { Button } from "../../components/Button/Button";
 
 export default function AboutUs() {
 
@@ -42,7 +43,7 @@ export default function AboutUs() {
             <h3 id="batista-label">Família Batista, fundadora da Escola</h3>
           </div>
           <div className="contentContainer">
-            <h2>O Legado da Escola Germinare</h2>
+            <h2 style={{'font-size': '22px'}}>O Legado da Escola Germinare</h2>
             <p>
               O projeto foi fundado com a missão de formar líderes em negócios,
               preparados de maneira efetiva, por meio de uma educação de alta
@@ -64,7 +65,7 @@ export default function AboutUs() {
               </div>
             </div>
             <div className="content">
-              <h2 class="section-title">NOSSAS ORIGENS</h2>
+              <h2 class="section-title" style={{'font-size': '22px'}}>NOSSAS ORIGENS</h2>
               <p style={{ fontSize: '14px' }}>
                 A Escola Germinare nasceu em setembro de 2009 e faz parte da J&F
                 Investimentos, que tem em seu portfólio empresas como JBS (maior
@@ -76,7 +77,7 @@ export default function AboutUs() {
                 Médio, e está localizada em São Paulo, em um terreno de uma das
                 empresas da J&F Investimentos.
               </p>
-              <p style={{ marginTop: '70px', fontSize: '14px' }}>
+              <p style={{ marginTop: '30px', fontSize: '14px' }}>
                 Por um lado, é possível dizer que os ideais do Instituto sempre
                 estiveram presentes na história da J&F Investimentos e logo, sua
                 trajetória remete à constituição e desenvolvimento do Grupo, ao
@@ -92,7 +93,7 @@ export default function AboutUs() {
           </div>
         </section>
         <section className="rebuilding">
-          <h2 class="section-title">nossa reforma 2022</h2>
+          <h2 class="section-title" style={{'font-size': '22px'}}>nossa reforma 2022</h2>
           <div>
             <div style={{ marginTop: 120 }}>
               <div className="imageContainerGalery">
@@ -163,7 +164,7 @@ export default function AboutUs() {
           <div className="sliderBg">
           </div>
           <div className="slider-container">
-            <h2>ÁREAS DE CONHECIMENTO</h2>
+            <h2 style={{'font-size': '22px'}}>ACADEMIAS</h2>
             <p className="textp"> A escola Germinare divide suas disciplinas em áreas do conhecimento, as Academias Germinare. Assim, temos a parceria de seis empresas do Grupo J&F: <b>Banco Original, Friboi, Flora, Seara, PicPay e Swift. </b> </p>
             <div style={{ marginTop: 40 }}>
               <Slider {...settings}>
@@ -234,7 +235,7 @@ export default function AboutUs() {
 
 
           <div className="divCertificados">
-            <p className="titleText">CERTIFICADOS</p>
+            <p className="titleText" style={{marginTop: '80px'}}>CERTIFICADOS</p>
             <div className="divIndividualCertificados">
 
               <div className="divBlueCertificados">
@@ -277,7 +278,7 @@ export default function AboutUs() {
               <p className="textConteudoEscola">Esse projeto visa ao envolvimento da família dos alunos na missão de formar jovens administradores e cidadãos. Entenda as 3 etapas desse novo curso:</p>
 
               <div className="divImgAndText">
-                <img src={visitas}></img>
+                <img src={visitas} style={{ "margin-top": "10px" }}/>
                 <div className="spacingDiv">
                   <p className="titleText" style={{ fontSize: '18px' }}>VISITAS</p>
                   <p className="textConteudoEscola" style={{ marginTop: '0' }}>Uma agenda personalizada e exclusiva, onde poderemos aproximar e fortalecer ainda mais a relação entre escola e família.</p>
@@ -285,7 +286,7 @@ export default function AboutUs() {
               </div>
 
               <div className="divImgAndText">
-                <img src={livro}></img>
+                <img src={livro} style={{ "margin-top": "10px" }}/>
                 <div className="spacingDiv">
                   <p className="titleText" style={{ fontSize: '18px' }}>ATIVIDADES</p>
                   <p className="textConteudoEscola" style={{ marginTop: '0' }}>Conte com atividades e brincadeiras para facilitar o convivio e promover o bem-estar entre os integrantes da família.</p>
@@ -293,7 +294,7 @@ export default function AboutUs() {
               </div>
 
               <div className="divImgAndText">
-                <img src={conselho}></img>
+                <img src={conselho} style={{ "margin-top": "10px" }} />
                 <div className="spacingDiv">
                   <p className="titleText" style={{ fontSize: '18px' }}>CONSELHOS</p>
                   <p className="textConteudoEscola" style={{ marginTop: '0' }}>As mães madrinhas sempre estão a postos para receber pedidos de ajuda e fornecer dicas ou coselhos aos pais participantes do programa.</p>
@@ -302,7 +303,6 @@ export default function AboutUs() {
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', position: 'relative' }}>
               <img className="imgOdete" src={odeteFamilia}></img>
-              <a href="#" className="LinkEscola">SAIBA MAIS SOBRE O PROJETO</a>
             </div>
           </div>
         </section>
@@ -366,13 +366,13 @@ export default function AboutUs() {
               <p className="textoAdicional">Faz as coisas acontecerem de forma simples e prática, é mão na massa, vai direto ao ponto, descomplica e desburocratiza respeitando as normas.</p>
             </div>
 
-            <div className="DivCardValores" style={{ width: '98.5%' }}>
-              <div className="intDivValores" style={{ width: '95%' }}>
+            <div className="DivCardValores" style={{ width: '97.5%' }}>
+              <div className="intDivValores" style={{ width: '94%' }}>
                 <img className="IconValores" src={atitudeDono}></img>
                 <p className="titleText" style={{ margin: '10px 0' }}>Atitude de Dono</p>
                 <p className="textConteudoEscola">Comprometido com o resultado, conhece com profundidade aquilo que faz e tem a visão do todo. Age com obstinação, disciplina e foco no detalhe. É mão na massa, busca sempre ser o melhor naquilo que faz e não desiste nunca.</p>
               </div>
-              <p className="textoAdicional" style={{ maxWidth: '95%' }}>Comprometido com o resultado, conhece com profundidade aquilo que faz e tem a visão do todo. Age com obstinação, disciplina e foco no detalhe. É mão na massa, busca sempre ser o melhor naquilo que faz e não desiste nunca.
+              <p className="textoAdicional" style={{ maxWidth: '94%' }}>Comprometido com o resultado, conhece com profundidade aquilo que faz e tem a visão do todo. Age com obstinação, disciplina e foco no detalhe. É mão na massa, busca sempre ser o melhor naquilo que faz e não desiste nunca.
                 Está sempre disponível e dá o exemplo. Indigna-se, não se conforma, não fica quieto nem se omite quando vê algo que não funciona bem ou possa ser melhorado. É atento aos gastos e à economia de cada centavo. Está engajado com a cultura da organização.</p>
             </div>
           </div>

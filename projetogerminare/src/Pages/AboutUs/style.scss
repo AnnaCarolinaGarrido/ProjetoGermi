@@ -1,6 +1,7 @@
 #about-us {
     margin-left: 8vw;
     margin-right: 8vw;
+    font-family: Montserrat, sans-serif;
     .mainContainer {
         margin-top: 98px;
       }
@@ -77,7 +78,8 @@
       }
       .origins img {
         height: 253px;
-        width: 333px
+        width: 333px;
+        margin-right: 110px;
       }
       .origins > div {
         display: flex;
@@ -145,7 +147,7 @@
           #191A4B, #4446B6
         );
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        width: 101.5vw;
+        width: 98.8vw;
         height: 100%;
         position: absolute;
         left: -110px;
@@ -177,6 +179,10 @@
           right: -500px;
           bottom: 40%!important;
       }
+      .slick-slide img{
+        border-radius: 8px;
+        border: none
+    }
       .dot{
           width: 14px;
           height: 14px;
@@ -249,6 +255,7 @@
         display: flex;
         border-radius: 8px;
         min-height: 400px;
+        margin-top: 31px;
         height: fit-content;
         flex-wrap: wrap;
         justify-content: center;
@@ -311,8 +318,8 @@
         color: #2E3092;
         font-size: 20px;
         font-weight: 700;
-        margin-top: 0;
         margin-bottom: 5px;
+        font-family: Montserrat, sans-serif,
       }
 
       .divEscolaDaFamilia {
