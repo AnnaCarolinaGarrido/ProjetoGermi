@@ -2,14 +2,14 @@ import styled from 'styled-components';
 
 const StyledText = styled.p`
   font-weight: 500;
-  color: #252525;
+  color: #2F80ED;
 `;
 
 export const StyledTitle = styled(StyledText)`
   color: white;
   font-size: 22px;
   font-weight: 700;
-  color: #2E3092;
+  color: #116ACC;
   text-transform: uppercase;
 `;
 

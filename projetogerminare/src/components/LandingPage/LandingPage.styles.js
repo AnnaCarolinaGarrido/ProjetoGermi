@@ -2,12 +2,13 @@ import styled from 'styled-components';
 
 export const Slider = styled.div`
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
     padding: 0;
     margin: 0;
     > div {
         background-color: #D2D2D2;
         background-size: cover;
-        height: 600px;
+        height: 570px;
         color: #ffffff;
         display: flex;
         justify-content: space-between;
@@ -23,10 +24,10 @@ export const Slider = styled.div`
     };
     > div > div > h3 {
         text-transform: uppercase;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 400;
         letter-spacing: 8px;
-        margin: 0 0 40px 0;
+        margin: 70px 0 40px 0;
     };
     > div > div > h1 {
         font-size: 50px;

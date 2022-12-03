@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const ComponentFooter = styled("div")`
+  font-family: Montserrat, sans-serif;
   display: flex;
-  background-color: ${props => props.footerColor};
+  background-color: #191A4B;
   color: white;
   padding: 40px 20px;
 

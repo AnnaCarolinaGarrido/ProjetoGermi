@@ -1,12 +1,8 @@
 import React from "react"
 import { ComponentFooter, StyledLogo, TitleFooter, LinksContainer, LinksFooter, TagFooter, TagFooterTitle, LinksContact} from "./Footer.style"
-import logo from '../../assets/Header/logo-branco.svg';
-import redesSociais from '../../assets/Header/redes-sociais.svg';
-import email from '../../assets/Header/email.svg';
-import telefone from '../../assets/Header/phone.svg';
-import ping from '../../assets/Header/localizacao.svg';
+import { logoBranco, redesSociais, email, telefone, ping } from "../../assets/Components/index"
 
-export function Footer(props) {
+export function Footer() {
 
     const footerRoutes = [
         {
@@ -53,8 +49,8 @@ export function Footer(props) {
 
     return(
         <>
-            <ComponentFooter footerColor={props.footerColor}>
-                <StyledLogo src={logo} alt="Logo da Germinare" href="/"/>
+            <ComponentFooter>
+                <StyledLogo src={logoBranco} alt="Logo da Germinare" href="/"/>
                 {
                     footerRoutes.map(el => {
                         return (

@@ -1,13 +1,10 @@
-import { HeaderContainer, StyledLogo, ContentContainer, MenuContainer, StyledHeader, StyledInput, ItemsContainer } from "./Header.style"
-import logo from '../../assets/Header/logo-escola.svg';
+import { HeaderContainer, StyledLogo, ContentContainer, MenuContainer, StyledHeader, StyledInput, ItemsContainer } from "./Header.style";
+import { logo, addPen, bookMark, firstLine, jornal } from "../../assets/Components/index";
 import { SearchBarButton } from "../SearchBarButton/SearchBarButton";
 import { MenuItem } from "../MenuItem/Menuitem";
 import { useState } from "react";
-import addPen from '../../assets/Header/penadd.svg';
-import bookMark from '../../assets/Header/bookmark.svg';
-import firstLine from '../../assets/Header/firstline.svg';
-import jornal from '../../assets/Header/clipboardtick.svg';
 import { useFilter } from "../../utils/useFilter";
+import {Routes, Route, useNavigate} from 'react-router-dom';
 
 export function Header() {
 
@@ -48,35 +45,47 @@ export function Header() {
         setShowMenu(current => !current)
     }
 
-    return (
-        <StyledHeader>
-            <HeaderContainer>
-                <ContentContainer>
-                    <StyledLogo src={logo} alt="Logo Germinare" />
-                    <a>Sobre a escola</a>
-                    <a>Admissão</a>
-                    <a>Acadêmico</a>
-                    <a>Governança</a>
-                    <a>Notícias</a>
-                    <SearchBarButton onClick={handleButtonClick}/>
-                </ContentContainer>
-            </HeaderContainer>
+    const navigate = useNavigate()
 
-            <MenuContainer style={showMenu? {'display':'flex'} : {'display':'none'}}>
-                <StyledInput type="text" placeholder="Pesquisar" onChange={setFilter}/>
-                <ItemsContainer>
-                    {
-                        filteredData.map(data => {
-                            return (
-                                <div>
-                                    <img src={data.src} alt={data.alt} />
-                                    <MenuItem title={data.title} subtitle={data.subtitle} route={data.route}/>
-                                </div>
-                            )
-                        })
-                    }
-                </ItemsContainer>
-            </MenuContainer>
-        </StyledHeader>
+    const navigateToAboutUs = () => {
+        // 👇️ navigate to /contacts
+        navigate('/sobre-nos');
+      };
+
+    const navigateHome = () => {
+        // 👇️ navigate to /
+        navigate('/');
+      };
+    return (
+        <div style={{position: "fixed", top: 0, left: 0, right: 0, zIndex: 20, backgroundColor: "white"}}>
+            <StyledHeader>
+                <HeaderContainer>
+                    <ContentContainer>
+                        <StyledLogo onClick={navigateHome} src={logo} alt="Logo Germinare" />
+                        <a onClick={navigateToAboutUs}>Sobre a escola</a>
+                        <a>Admissão</a>
+                        <a>Acadêmico</a>
+                        <a>Governança</a>
+                        <a>Notícias</a>
+                        <SearchBarButton onClick={handleButtonClick}/>
+                    </ContentContainer>
+                </HeaderContainer>
+                <MenuContainer style={showMenu? {'display':'flex'} : {'display':'none'}}>
+                    <StyledInput type="text" placeholder="Pesquisar" onChange={setFilter}/>
+                    <ItemsContainer>
+                        {
+                            filteredData.map(data => {
+                                return (
+                                    <div>
+                                        <img src={data.src} alt={data.alt} />
+                                        <MenuItem title={data.title} subtitle={data.subtitle} route={data.route}/>
+                                    </div>
+                                )
+                            })
+                        }
+                    </ItemsContainer>
+                </MenuContainer>
+            </StyledHeader>
+        </div>
     )
 }
