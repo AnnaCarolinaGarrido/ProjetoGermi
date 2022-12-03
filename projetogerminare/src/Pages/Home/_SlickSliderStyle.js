@@ -1,6 +1,7 @@
 import { styled } from "@mui/material";
 
 const SliderWrapper = styled("div")`
+  margin-top: 70px;
   .slick-list {
     overflow: ${props => (props.overflow ? "visible" : "hidden")};
   }
@@ -208,7 +209,7 @@ const SliderWrapper = styled("div")`
     width: 100%;
     padding: 0;
     margin: 0;
-    top: 450px;
+    top: 500px;
 
     list-style: none;
 

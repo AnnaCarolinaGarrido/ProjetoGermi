@@ -88,7 +88,7 @@
         left: 5px;
       }
       .section-title {
-        color: #2e3092;
+        color: #2E3092;
         text-transform: uppercase;
       }
       .content {
@@ -123,7 +123,7 @@
       }
       .shadow h5 {
         color: white;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 500;
         text-transform: uppercase;
       }
@@ -138,7 +138,7 @@
         gap: 60px;
       }
       .academys .intro p {
-        font-size: 18px;
+        font-size: 14px;
       }
       .carousel .sliderBg {
         background: linear-gradient(
@@ -150,7 +150,7 @@
         width: 100vw;
         height: 100%;
         position: absolute;
-        left: -150px;
+        left: -110px;
         z-index: -1;
       }
       .carousel {
@@ -158,51 +158,55 @@
         position: relative;
       }
       .slider-container{
-          padding: 80px 0;
+          padding: 70px 0;
       }
       .slider-container h2{
           color: white;
       }
       .slick-dots{
-          transform: rotate(90deg);
-          right: -480px;
-          bottom: 40%!important;
-      }
-      .dot{
-          width: 14px;
-          height: 14px;
-          border-radius: 50%;
-          background-color: #D9D9D9;
-      }
-      .slick-active .dot{
-          background-color: #363894;
-      }
-      .slider-item{
-          background-color: white;
-          min-height: 322px;
-          border-radius: 8px !important;
-          display: flex;
-          margin: -2px 0;
-          width: auto !important;
-      }
-      .slider-container div{
-        border-radius: 8px;
-      }
-      .slider-item-wrapper{
+        transform: rotate(90deg);
+        right: -500px;
+        bottom: 40%!important;
+    }
+    .dot{
+        background-color: #2E3092;
+    }
+    .slider-item{
+        background-color: transparent;
+        min-height: 322px;
+        border-radius: 8px !important;
+        display: flex;
+      border-radius: 8px;
+    }
+    .slider-item-wrapper{
+      background-color: transparent;
+        display: flex;
+        align-items: center;
+        height: 322px;
+        gap: 100px;
+        border-radius: 0px !important;
+        width: 1150px;
+        .adjust{
           display: flex;
           align-items: center;
           height: 322px;
           gap: 100px;
-          margin-left: -60px;
-          border-radius: 0px !important;
-          width: 1150px;
-      }
-      .sliderText{
-          max-width: 618px;
-      }
+          width: 100%;
+          background-color: white;
+          margin-left: 60px;
+          img{
+            margin-left: -60px;
+          }
+        }
+    }
+    .sliderText{
+        max-width: 618px;
+        font-size: 18px;
+        font-weight: 400;
+    }
       .sliderText h4{
-          color: #363894;
-          font-size: 22px;
+          color: #2E3092;
+          font-size: 20px;
           font-weight: 700;
           margin: 0;
       }
@@ -212,22 +216,12 @@
           font-size: 14px;
       }
       .sliderText p{
-          font-size: 18px;
+          font-size: 14px;
           font-weight: 400;
       }
       .slick-list{
         overflow: visible !important;
       }
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
       
       .divCertificados {
         display: flex;
@@ -255,7 +249,7 @@
         max-width: 300px;
         height: 350px;
         width: 100%;
-        background-color: #26276D;
+        background-color: #2E3092;
         border-radius: 8px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       }
@@ -277,12 +271,11 @@
       .textCertificados {
         text-align: center;
         color: #1C1D52;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 600;
         max-width: 300px;
         width: 80%;
       }
-      
       
       .divTriangular {
         margin-top: 159px;
@@ -303,17 +296,12 @@
       
       .titleText {
         color: #2E3092;
-        font-size: 22px;
+        font-size: 20px;
         font-weight: 700;
         margin-top: 0;
         margin-bottom: 5px;
       }
-      
-      
-      
-      
-      
-      
+
       .divEscolaDaFamilia {
         display: flex;
         width: 100%;
@@ -344,7 +332,7 @@
       .textConteudoEscola{
         margin: 0;
         color: #1D1D1D;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 500;
       }
       
@@ -363,11 +351,7 @@
         color: #191A4B;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       }
-      
-      
-      
-      
-      
+
       .divValores{
         display: flex;
         margin-top: 40px;
@@ -428,29 +412,24 @@
       }
       
       
-      
       .divAmigoGerminare{ 
         display: flex;
-        position: absolute;
         justify-content: center;
         align-items: center;
-        width: 100%;
         max-width: 1180px;
-        height: 393px;
         border-radius: 8px;
         gap: 20px;
-        margin: 0 auto;
+        margin: -70px 0 20px 0;
       }
       
       .divAmigoGerminareContent{
         flex-direction: column;
         justify-content: center;
-        height: 310px;
       }
       
       .divAmigoGerminareTitle{
         text-align: center;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 700;
         margin-bottom: 0;
         margin-top: 0;
@@ -495,15 +474,12 @@
       }
       
       .textTitle{
-        margin-top: 0;
-        width: 100%;
         color: #2E3092;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 700;
       }
       
       .textConteudo{
-        margin: 20px 0;
         color: #1D1D1D;
         font-size: 14px;
         font-weight: 500;

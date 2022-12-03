@@ -28,12 +28,14 @@ export default function Form() {
           )}
           <input type="text" placeholder="Assunto" />
           <input type="text" placeholder="Sua mensagem *" required />
-          <ReCAPTCHA
-            className="recaptcha"
-            sitekey="6LdsuUojAAAAAJxJgTVtmDwwro-7xwbU2isk8kPN"
-          />
-          
-          <Button text='Enviar'/>
+          <div style={{display: "flex", alignItems: "center", gap: "20px", justifyContent: "center"}}>
+            <ReCAPTCHA
+              className="recaptcha"
+              sitekey="6LdsuUojAAAAAJxJgTVtmDwwro-7xwbU2isk8kPN"
+            />
+            
+            <Button text='Enviar'/>
+          </div>
         </form>
       </div>
     </div>

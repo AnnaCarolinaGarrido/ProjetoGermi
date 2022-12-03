@@ -1,36 +1,15 @@
 import * as React from 'react';
 import { MainDiv } from './style';
-import CompaniesIcon from './Assets/Companies.svg'
-import BasketIcon from './Assets/Basket.svg'
-import BookIcon from './Assets/Book.svg'
-import SignalIcon from './Assets/Signal.svg'
-import CltImg from './Assets/CltImg.svg'
-import qrCodeMensal from './Assets/qrCodeMensal.png'
-import qrCodeUnico from './Assets/qrCodeUnico.png'
-import Button from '@mui/material/Button';
-import Instagram from './Assets/Instagram.svg'
-import Facebook from './Assets/Facebook.svg'
-import Youtube from './Assets/Youtube.svg'
-import BancoOriginal from './Assets/BancoOriginal.svg'
-import Picpay from './Assets/Picpay.svg'
-import Ambar from './Assets/Ambar.svg'
-import CanalRural from './Assets/CanalRural.svg'
-import Eldorado from './Assets/Eldorado.svg'
-import Flora from './Assets/Flora.svg'
-import JBS from './Assets/Jbs.svg'
 import Slider from "react-slick";
+import Form from '../../components/Form/Form';
 import SliderWrapper from "./_SlickSliderStyle";
 import LandingPage from '../../components/LandingPage/LandingPage';
-import HeaderImg from './Assets/HeaderImg.svg'
-import HeaderImg2 from './Assets/HeaderImg2.svg'
-import HeaderImg3 from './Assets/HeaderImg3.svg'
-import HeaderImg4 from './Assets/HeaderImg4.svg'
-import Form from '../../components/Form/Form';
-import "./styles.scss";
+import Button from '@mui/material/Button';
+import { CompaniesIcon, BasketIcon, BookIcon, SignalIcon, CltImg, qrCodeMensal, qrCodeUnico, Instagram, Facebook, Youtube, BancoOriginal, Picpay, Ambar, CanalRural, Eldorado, Flora, JBS, HeaderImg, HeaderImg2, HeaderImg3, HeaderImg4, Phone, Email } from "../../assets/HomePage/index"
 
 const cardsList = [
-    { id: '#191A4B', title: 'Ensino 100% gratuito', text: 'A Escola Germinare oferece um ensino totalmente gratuito e integral, com professores altamente qualificados com dedicação exclusiva à escola.', img: BookIcon },
-    { id: '#26276', title: 'Escola tecnológica', text: 'Temos wi-fi 6, fornecimento de notebook, salas de aula climatizadas 100% digitais, com equipamentos de última geração.', img: SignalIcon },
+    { id: '#1C1D52', title: 'Ensino 100% gratuito', text: 'A Escola Germinare oferece um ensino totalmente gratuito e integral, com professores altamente qualificados com dedicação exclusiva à escola.', img: BookIcon },
+    { id: '#21226B', title: 'Escola tecnológica', text: 'Temos wi-fi 6, fornecimento de notebook, salas de aula climatizadas 100% digitais, com equipamentos de última geração.', img: SignalIcon },
     { id: '#2E3092', title: 'Projeto Alimentare', text: 'Oferecemos alimentos frescos e sem aditivos químicos na composição das refeições. Também são disponibilizadas diversas frutas frescas.', img: BasketIcon },
     { id: '#4446B6', title: 'Estágios nas empresas', text: 'Projeto acadêmico com os estágios remunerados, que os interliga e garante a formação de profissionais capacitados para o ambiente de trabalho.', img: CompaniesIcon },
 ];
@@ -80,22 +59,20 @@ export default function HomePage() {
                     <Slider {...settings}>
                         <div className="testimoni--wrapper">
                             <LandingPage subtitle='germinatech' title='Ensino médio
-                            de tecnologia' description='Ensino Médio Integrado com Técnico em Desenvolvimento de Sistemas.' buttonText='Conheça Mais' backgroundImage={HeaderImg} />
+                            de tecnologia' description='Ensino Médio Integrado com Técnico em Desenvolvimento de Sistemas.' buttonText='Conheça Mais' backgroundImage={HeaderImg} href='https://techadmissionfront.z13.web.core.windows.net/tech'/>
                         </div>
                         <div className="testimoni--wrapper">
-                            <LandingPage subtitle='acadêmico' title='Projeto acadêmico' description='Confirá já a lista dos convidados a participarem da 4ª fase da amissão' buttonText='Confira Já' backgroundImage={HeaderImg2} />
+                            <LandingPage subtitle='acadêmico' title='Projeto acadêmico' description='Conheça nossas disciplinas escolares relacionadas à gestão e tecnologia!' buttonText='Saiba mais' backgroundImage={HeaderImg2} />
                         </div>
                         <div className="testimoni--wrapper">
-                            <LandingPage subtitle='admissão' title='Processo de Admissão 2023' description='Confirá já a lista dos convidados a participarem da 4ª fase da admissão' buttonText='Confira Já' backgroundImage={HeaderImg3} />
+                            <LandingPage subtitle='admissão' title='Processo de Admissão 2023' description='Conheça os cursos disponíveis e como participar do processo seletivo!' buttonText='Confira Já' backgroundImage={HeaderImg3} />
                         </div>
                         <div className="testimoni--wrapper">
-                            <LandingPage subtitle='sobre a escola' title='Conheça as academias' description='Confirá já a lista dos convidados a participarem da 4ª fase da admissão' buttonText='Confira Já' backgroundImage={HeaderImg4} />
+                            <LandingPage subtitle='sobre a escola' title='Academias Germinare' description='Conheça as academias Germinare que são parte integrante de nosso projeto acadêmico' buttonText='Saiba mais' backgroundImage={HeaderImg4} href='/sobre-nos'/>
                         </div>
                     </Slider>
                 </SliderWrapper>
-                <div style={{ marginBottom: '20px' }}>
-
-                </div>
+ 
                 <div className="generalInfo">
                     <div>
                         <div className='infoContainer'>
@@ -116,6 +93,7 @@ export default function HomePage() {
                         <div className='dcpInfo'> de estrutura </div>
                     </div>
                 </div>
+
                 <div className="line"></div>
                 <div className="content">
                     <h3 className='pageTitle'> Sobre nossa escola </h3>
@@ -134,7 +112,6 @@ export default function HomePage() {
                         ))}
                     </div>
                     <div className="culture">
-                        <h3 className='pageTitle'> Sobre nossa cultura </h3>
                         <div className="cultureCnt">
                             <div className="cultureCircle">
                                 <img className="cltImg" src={CltImg} />
@@ -142,9 +119,9 @@ export default function HomePage() {
                             <div className="cultureText">
                                 <div>
                                     <h3 className='pageTitle pagep'> Nossa missão </h3>
-                                    <p> Formar jovens administradores de empresas e cidadãos que tenham total aderência aos nossos valores, alta capacidade de liderança, aguçado tino comercial e competência para produzir resultados superlativos. Somos uma instituição aprovada pelo MEC – Ministério da Educação – e reconhecida pela UNESCO.</p>
+                                    <p className='pageTextp'> Formar jovens administradores de empresas e cidadãos que tenham total aderência aos nossos valores, alta capacidade de liderança, aguçado tino comercial e competência para produzir resultados superlativos. Somos uma instituição aprovada pelo MEC – Ministério da Educação – e reconhecida pela UNESCO.</p>
                                     <h3 className='pageTitle pagep'> Projeto acadêmico </h3>
-                                    <p> O foco principal é oferecer uma ampla preparação com conteúdos dirigidos ao desenvolvimento de habilidades profissionais e a oportunidade de especialização escolhida: digital, financeiro, varejo, commodities e bens de consumo.</p>
+                                    <p className='pageTextp'> O foco principal é oferecer uma ampla preparação com conteúdos dirigidos ao desenvolvimento de habilidades profissionais e a oportunidade de especialização escolhida: digital, financeiro, varejo, commodities e bens de consumo.</p>
                                 </div>
                             </div>
                         </div>
@@ -152,9 +129,7 @@ export default function HomePage() {
                 </div>
                 <section className="highlightedInfo">
                     <div className='highlightedInfoText'>
-                        <h1>
-                            DOAÇÕES
-                        </h1>
+                    <h3 style={{'color': '#FFFFFF'}}> DOAÇÕES </h3>
                         <p>
                             O desafio da Escola Germinare é tornar-se uma referência no setor da educação, a partir da excelência na qualidade, proposta acadêmica diferenciada e de sua missão em formar jovens administradores de empresas e cidadãos. Venha fazer parte deste legado!
                         </p>
@@ -202,16 +177,43 @@ export default function HomePage() {
                     </div>
                 </div>
 
-                <div className="content">
-                    <div className="companies">
-                        <h3 className='pageTitle'>COMO NOS CONTATAR?</h3>                        
-                        <Form></Form>
-                        <div className='companiesCnt'>
-                            <div className="contacts">
-                                <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1440&amp;height=240&amp;hl=en&amp;q=Rua Irineu José Bordon, 335&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                <div style={{marginTop: "80px"}}>
+                    <div className="flex-container">
+                        <div className="upperContainer">
+                            <h3 className='pageTitle'>COMO NOS CONTATAR?</h3>
+                            <div className="contact">
+                                <img src={Phone} alt="icone de telefone" className='contactIcon' />
+                                <p className="contactText">(11) 3623-6000 / (11) 96479-9498</p>
+                            </div>
+                            <div className="contact">
+                                <img src={Email} alt="icone de e-mail" className='contactIcon' />
+                                <p className="contactText">instituto@germinare.org.br</p>
+                                <span className='auxiliar'>(doações e outras contribuições)</span>
+                            </div>
+                            <div className="contact">
+                                <img src={Email} alt="icone de e-mail" className='contactIcon' />
+                                <p className="contactText">comunicacao@germinare.org.br</p>
+                                <span className='auxiliar'>(imprensa e relações institucionais)</span>
+                            </div>
+                            <div className="contact">
+                                <img src={Email} alt="icone de e-mail" className='contactIcon' />
+                                <p className="contactText">admissao@germinare.org.br</p>
+                                <span className='auxiliar'>(dúvidas sobre processo de seleção)</span>
+                            </div>
+                            <div className="contact">
+                                <img src={Email} alt="icone de e-mail" className='contactIcon' />
+                                <p className="contactText">ouvidoria@germinare.org.br</p>
+                                <span className='auxiliar'>(ouvidoria)</span>
+                            </div>
+                            <div className="contact">
+                                <img src={Email} alt="icone de e-mail" className='contactIcon' />
+                                <p className="contactText">rh@germinare.org.br</p>
+                                <span className='auxiliar'>(trabalhe conosco)</span>
                             </div>
                         </div>
+                        <Form className="contactForm"/>
                     </div>
+                    <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1440&amp;height=240&amp;hl=en&amp;q=Rua Irineu José Bordon, 335&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                 </div>
 
                 <div className='videoCnt'>
@@ -221,7 +223,7 @@ export default function HomePage() {
                             frameborder="0" className='ytvideo' />
                         <div className='retroText'>
                             <div>
-                                <h3 className='pageTitle pagep'> Assista a nossa retrospectiva </h3>
+                                <h3 className='pageTitle'> Assista a nossa retrospectiva </h3>
                                 <p className='pageText'>
                                     No dia 8 de fevereiro, completamos 12 anos de Escola Germinare. Acompanhe toda a nossa evolução em um vídeo para representar nossa história.
                                 </p>
