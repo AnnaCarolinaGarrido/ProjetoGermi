@@ -141,13 +141,11 @@
         font-size: 14px;
       }
       .carousel .sliderBg {
-        background: linear-gradient(
-          90deg,
-          rgba(68, 70, 182, 0.94) 0.85%,
-          rgba(25, 26, 75, 0.94) 98.74%
+        background: linear-gradient(90deg,
+          #191A4B, #4446B6
         );
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        width: 100vw;
+        width: 101.5vw;
         height: 100%;
         position: absolute;
         left: -110px;
@@ -159,51 +157,70 @@
       }
       .slider-container{
           padding: 70px 0;
+          padding: 60px 0;
       }
+      .textp{
+        color: white;
+        line-height: 25px;
+        margin-top: 40px;
+        margin-bottom: 40px
+        }
       .slider-container h2{
           color: white;
+          font-weight: 700;
+      }
+      #about-us .slider-container div {
+        max-width: fit-content;
       }
       .slick-dots{
-        transform: rotate(90deg);
-        right: -500px;
-        bottom: 40%!important;
-    }
-    .dot{
-        background-color: #2E3092;
-    }
-    .slider-item{
+          transform: rotate(90deg);
+          right: -500px;
+          bottom: 40%!important;
+      }
+      .dot{
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+          background-color: #D9D9D9;
+      }
+      .slick-active .dot{
+          background-color: #363894;
+      }
+      .slider-item{
+          background-color: transparent;
+          min-height: 322px;
+          border-radius: 8px !important;
+          display: flex;
+          margin: -2px 0;
+          width: auto !important;
+      }
+      .slider-container div{
+        border-radius: 8px;
+      }
+      .slider-item-wrapper{
         background-color: transparent;
-        min-height: 322px;
-        border-radius: 8px !important;
-        display: flex;
-      border-radius: 8px;
-    }
-    .slider-item-wrapper{
-      background-color: transparent;
-        display: flex;
-        align-items: center;
-        height: 322px;
-        gap: 100px;
-        border-radius: 0px !important;
-        width: 1150px;
-        .adjust{
           display: flex;
           align-items: center;
           height: 322px;
           gap: 100px;
-          width: 100%;
-          background-color: white;
-          margin-left: 60px;
-          img{
-            margin-left: -60px;
+          border-radius: 0px !important;
+          width: 1150px;
+          .adjust{
+            display: flex;
+            align-items: center;
+            height: 322px;
+            gap: 100px;
+            width: 100%;
+            background-color: white;
+            margin-left: 60px;
+            img{
+              margin-left: -60px;
+            }
           }
-        }
-    }
-    .sliderText{
-        max-width: 618px;
-        font-size: 18px;
-        font-weight: 400;
-    }
+      }
+      .sliderText{
+          max-width: 618px;
+      }
       .sliderText h4{
           color: #2E3092;
           font-size: 20px;
@@ -219,10 +236,6 @@
           font-size: 14px;
           font-weight: 400;
       }
-      .slick-list{
-        overflow: visible !important;
-      }
-      
       .divCertificados {
         display: flex;
         flex-direction: column;
