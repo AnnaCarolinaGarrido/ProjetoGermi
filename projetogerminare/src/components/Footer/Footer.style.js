@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const ComponentFooter = styled("div")`
+  font-family: Montserrat, sans-serif;
   display: flex;
   background-color: #191A4B;
   color: white;
@@ -32,13 +33,15 @@ export const TitleFooter = styled("p")`
   font-size: 12px;
 `
 
-export const LinksFooter = styled("p")`
+export const LinksFooter = styled("a")`
   margin: 0;
+  color: white;
   margin-top: 10px;
   text-transform: capitalize;
   font-weight: 500;
   font-size: 11px;
   cursor: pointer;
+  text-decoration: none;
 `
 export const LinksContact = styled("p")`
   display: flex;
